@@ -14,7 +14,7 @@ Features
 - Project Showcase
 
 How to View
-Visit [https://priteshparab.github.io]([https://priteshparab.github.io](https://parabpritesh.github.io/priteshparab/))
+Visit [https://priteshparab.github.io]((https://parabpritesh.github.io/priteshparab/))
 
 Contact
 - Email: priteshparab5@gmail.com
