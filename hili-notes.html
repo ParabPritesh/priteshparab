@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="HiLi Notes Case Study - A PWA that transforms PDF highlights into organized, exportable notes for students and researchers.">
+    <title>HiLi Notes Case Study | Pritesh Parab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/case-study.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><img src="POP logo.svg" alt="P.O.P Logo" class="logo-img"></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="index.html#contact" class="nav-link btn-primary">Let's Talk</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Case Study Hero -->
+    <section class="case-hero">
+        <div class="case-hero-container">
+            <a href="index.html#projects" class="back-link">← Back to Projects</a>
+            <div class="case-hero-content">
+                <div class="case-meta">
+                    <span class="case-tag">PWA</span>
+                    <span class="case-tag">EdTech</span>
+                    <span class="case-tag">AI-Ready</span>
+                </div>
+                <h1 class="case-title">HiLi Notes</h1>
+                <p class="case-subtitle">
+                    A web-based digital notebook that transforms your PDF highlights into clean,
+                    structured notes you can review or export in seconds.
+                </p>
+                <div class="case-stats">
+                    <div class="stat">
+                        <span class="stat-value">5</span>
+                        <span class="stat-label">Months to Build</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">5</span>
+                        <span class="stat-label">Beta Testers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">95%</span>
+                        <span class="stat-label">App Ready</span>
+                    </div>
+                </div>
+                <div class="case-cta">
+                    <a href="https://hilinotes.com" target="_blank" class="btn-primary btn-large">
+                        Visit Live Site →
+                    </a>
+                </div>
+            </div>
+            <div class="case-hero-visual">
+                <!-- App Screenshot -->
+                <div class="case-mockup" id="heroMockup">
+                    <img src="assets/hili-notes/workspace.png"
+                        alt="HiLi Notes Workspace - PDF highlighting with organized notes" class="mockup-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="case-section">
+        <div class="case-container">
+            <div class="case-section-header">
+                <span class="section-label">Overview</span>
+                <h2>The Problem</h2>
+            </div>
+            <div class="case-content-grid">
+                <div class="case-text">
+                    <p class="lead-text">
+                        Students highlight 50+ pages of notes but can't remember where key information is,
+                        waste 2–3 hours organizing before exams, and end up not reviewing highlights at all.
+                    </p>
+                    <p>
+                        This is a critical bottleneck in the study process—<strong>highlighting doesn't equal
+                            understanding.</strong>
+                        I experienced this pain personally while preparing for exams and observed the same struggle
+                        in my friends, especially UPSC candidates and college peers.
+                    </p>
+                </div>
+                <div class="case-sidebar">
+                    <div class="info-card">
+                        <h4>My Role</h4>
+                        <p>Solo Founder, Product Designer & Full-Stack Developer</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Timeline</h4>
+                        <p>Nov 2025 – Dec 2025 (5 weeks intensive)</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Target Users</h4>
+                        <p>Students, UPSC aspirants, Researchers, Knowledge workers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="case-section alt-bg">
+        <div class="case-container">
+            <div class="case-section-header">
+                <span class="section-label">The Solution</span>
+                <h2>What Makes HiLi Notes Unique</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Auto-Organized Highlights</h3>
+                    <p>No other app auto-organizes highlights into structured notes. Select categories directly—no color
+                        memorization needed.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📄</div>
+                    <h3>One-Click Export</h3>
+                    <p>Get ready-to-review study guides in DOCX/PDF format with headers, table of contents, and proper
+                        formatting.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✈️</div>
+                    <h3>Offline-First PWA</h3>
+                    <p>Works seamlessly without internet, syncs when reconnected—critical for students with unreliable
+                        connectivity.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Activate Topics</h3>
+                    <p>Jump back to any previous topic and append new highlights without creating duplicates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Development Timeline -->
+    <section class="case-section">
+        <div class="case-container">
+            <div class="case-section-header">
+                <span class="section-label">Process</span>
+                <h2>Development Timeline</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="week-badge">Week 1</span>
+                        <span class="timeline-date">Nov 20–26</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Foundation & Core Features</h3>
+                        <ul>
+                            <li>Core highlighting functionality</li>
+                            <li>PDF support with pdfjs-dist</li>
+                            <li>Interactive demo creation</li>
+                            <li>Email authentication system</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="week-badge">Week 2</span>
+                        <span class="timeline-date">Nov 27 – Dec 3</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Authentication & Export</h3>
+                        <ul>
+                            <li>Google OAuth integration</li>
+                            <li>Export to DOCX/PDF functionality</li>
+                            <li>Push notifications system</li>
+                            <li>Brand identity & visual design</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="week-badge">Week 3</span>
+                        <span class="timeline-date">Dec 4–10</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>PWA & Security</h3>
+                        <ul>
+                            <li>PWA optimization for offline use</li>
+                            <li>Security audit (secrets removed, logs sanitized)</li>
+                            <li>Service Worker implementation</li>
+                            <li>Performance optimization</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="week-badge">Week 4</span>
+                        <span class="timeline-date">Dec 11–17</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Compliance & Notifications</h3>
+                        <ul>
+                            <li>Push notifications with VAPID</li>
+                            <li>Privacy compliance (active consent)</li>
+                            <li>User feedback integration</li>
+                            <li>Error monitoring with Sentry</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="week-badge">Week 5</span>
+                        <span class="timeline-date">Dec 18–25</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Deployment & Polish</h3>
+                        <ul>
+                            <li>Render deployment (auto-deploy from GitHub)</li>
+                            <li>Mobile UX overhaul</li>
+                            <li>Cloudinary migration for file storage</li>
+                            <li>Beta testing with 5 users</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item launch">
+                    <div class="timeline-marker">
+                        <span class="week-badge launch-badge">🚀 Launch</span>
+                        <span class="timeline-date">Dec 27–30</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Product Launch</h3>
+                        <ul>
+                            <li>Live at hilinotes.com</li>
+                            <li>Direct outreach to UPSC faculty</li>
+                            <li>Social media awareness campaign</li>
+                            <li>Target: 50–100 initial signups</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="case-section alt-bg">
+        <div class="case-container">
+            <div class="case-section-header">
+                <span class="section-label">Technology</span>
+                <h2>Tech Stack</h2>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-category">
+                    <h3>🎨 Frontend</h3>
+                    <div class="tech-pills">
+                        <span class="tech-pill">React 19</span>
+                        <span class="tech-pill">Vite</span>
+                        <span class="tech-pill">TailwindCSS</span>
+                        <span class="tech-pill">Framer Motion</span>
+                        <span class="tech-pill">react-pdf</span>
+                        <span class="tech-pill">@dnd-kit</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>🔧 Backend</h3>
+                    <div class="tech-pills">
+                        <span class="tech-pill">Django</span>
+                        <span class="tech-pill">Django REST Framework</span>
+                        <span class="tech-pill">Celery + Redis</span>
+                        <span class="tech-pill">JWT Auth</span>
+                        <span class="tech-pill">Gunicorn</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>☁️ Infrastructure</h3>
+                    <div class="tech-pills">
+                        <span class="tech-pill">Render</span>
+                        <span class="tech-pill">PostgreSQL</span>
+                        <span class="tech-pill">Cloudinary</span>
+                        <span class="tech-pill">Sentry</span>
+                        <span class="tech-pill">Mixpanel</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>🤖 AI (Planned)</h3>
+                    <div class="tech-pills">
+                        <span class="tech-pill">Claude API</span>
+                        <span class="tech-pill">Mind Maps</span>
+                        <span class="tech-pill">Quiz Generation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenges Section -->
+    <section class="case-section">
+        <div class="case-container">
+            <div class="case-section-header">
+                <span class="section-label">Challenges</span>
+                <h2>Key Design Challenges & Solutions</h2>
+            </div>
+            <div class="challenges-list">
+                <div class="challenge-item">
+                    <div class="challenge-header">
+                        <span class="challenge-number">01</span>
+                        <h3>Categorized Highlighting UX</h3>
+                    </div>
+                    <div class="challenge-content">
+                        <div class="problem">
+                            <h4>Problem</h4>
+                            <p>Initial color-coding system required users to remember which color mapped to which
+                                category—cognitively taxing and unintuitive.</p>
+                        </div>
+                        <div class="solution">
+                            <h4>Solution</h4>
+                            <p>Switched to fixed category assignment. Users select category names directly (dropdown)
+                                instead of colors. App auto-assigns colors.</p>
+                        </div>
+                        <div class="impact">
+                            <span class="impact-badge">✓ First-time users understood workflow in <30 seconds</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="challenge-item">
+                    <div class="challenge-header">
+                        <span class="challenge-number">02</span>
+                        <h3>Intuitive Workspace UX</h3>
+                    </div>
+                    <div class="challenge-content">
+                        <div class="problem">
+                            <h4>Problem</h4>
+                            <p>Export buttons buried at bottom, no way to edit categories, organized highlights panel
+                                hidden below fold, no mobile right-click.</p>
+                        </div>
+                        <div class="solution">
+                            <h4>Solution</h4>
+                            <p>Reorganized with sticky bottom nav, "Activate Topic" button for appending highlights,
+                                editable category names, click-to-highlight menu on mobile.</p>
+                        </div>
+                        <div class="impact">
+                            <span class="impact-badge">✓ User feedback improved from "confusing" to "intuitive"</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="challenge-item">
+                    <div class="challenge-header">
+                        <span class="challenge-number">03</span>
+                        <h3>PDF Loading & Persistence</h3>
+                    </div>
+                    <div class="challenge-content">
+                        <div class="problem">
+                            <h4>Problem</h4>
+                            <p>Loading entire PDFs caused 5–10 second startup, high memory on mobile, lost highlights on
+                                refresh.</p>
+                        </div>
+                        <div class="solution">
+                            <h4>Solution</h4>
+                            <p>Lazy-loading pages on scroll, dual-layer persistence (localStorage + backend), Service
+                                Worker for offline sync.</p>
+                        </div>
+                        <div class="impact">
+                            <span class="impact-badge">✓ Load times under 2 seconds, zero data loss</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results & Learnings -->
+    <section class="case-section alt-bg">
+        <div class="case-container">
+            <div class="case-section-header">
+                <span class="section-label">Outcomes</span>
+                <h2>Key Learnings</h2>
+            </div>
+            <div class="learnings-grid">
+                <div class="learning-card">
+                    <span class="learning-number">1</span>
+                    <h3>Mobile-First Design Matters</h3>
+                    <p>Designing for desktop first and adapting to mobile later caused weeks of rework. Constraint
+                        drives innovation—design for mobile from Day 1.</p>
+                </div>
+                <div class="learning-card">
+                    <span class="learning-number">2</span>
+                    <h3>Validate with Users Early</h3>
+                    <p>I spent 2 weeks optimizing the dashboard before getting feedback—only to learn users didn't care
+                        about that part. Show testers a working version every 7 days.</p>
+                </div>
+                <div class="learning-card">
+                    <span class="learning-number">3</span>
+                    <h3>Ship Core Feature Great</h3>
+                    <p>My biggest mistake was spending more time on dashboard than highlight workspace. The dashboard
+                        doesn't matter if the core feature sucks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beta Feedback -->
+    <section class="case-section">
+        <div class="case-container">
+            <div class="case-section-header">
+                <span class="section-label">Feedback</span>
+                <h2>Early Tester Response</h2>
+            </div>
+            <div class="feedback-grid">
+                <div class="feedback-card positive">
+                    <span class="feedback-icon">✅</span>
+                    <p>"Easy highlighting & auto-note generation"</p>
+                </div>
+                <div class="feedback-card positive">
+                    <span class="feedback-icon">✅</span>
+                    <p>"Drag-and-drop to reorder, activate previous topics"</p>
+                </div>
+                <div class="feedback-card positive">
+                    <span class="feedback-icon">✅</span>
+                    <p>"Dark & light mode, clean UI, well-formatted exports"</p>
+                </div>
+                <div class="feedback-card improvement">
+                    <span class="feedback-icon">🔄</span>
+                    <p>"PDF rendering on slow internet lags" — Working on optimization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Roadmap -->
+    <section class="case-section alt-bg">
+        <div class="case-container">
+            <div class="case-section-header">
+                <span class="section-label">What's Next</span>
+                <h2>Future Roadmap</h2>
+            </div>
+            <div class="roadmap-grid">
+                <div class="roadmap-card">
+                    <span class="roadmap-quarter">Q1 2026</span>
+                    <h3>Multi-Source Documents</h3>
+                    <p>Add multiple PDFs/DOCX to a single workspace, keeping everything organized chronologically.</p>
+                </div>
+                <div class="roadmap-card">
+                    <span class="roadmap-quarter">Q2 2026</span>
+                    <h3>AI-Powered Features</h3>
+                    <p>Mind maps, flowcharts, smart summaries using Claude API. Quiz generation with spaced repetition.
+                    </p>
+                </div>
+                <div class="roadmap-card">
+                    <span class="roadmap-quarter">Q2 2026</span>
+                    <h3>Chat with AI</h3>
+                    <p>Ask questions about your notes, get instant personalized explanations without leaving the app.
+                    </p>
+                </div>
+                <div class="roadmap-card">
+                    <span class="roadmap-quarter">2027</span>
+                    <h3>Scale & Native Apps</h3>
+                    <p>iOS & Android apps, team collaboration, multi-language support. Target: 100K users.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="case-cta-section">
+        <div class="case-container">
+            <div class="cta-content">
+                <h2>Try HiLi Notes Today</h2>
+                <p>Transform your highlights into structured notes, effortlessly.</p>
+                <div class="cta-buttons">
+                    <a href="https://hilinotes.com" target="_blank" class="btn-primary btn-xlarge">
+                        Visit HiLi Notes →
+                    </a>
+                    <a href="index.html#projects" class="btn-secondary btn-large">
+                        View More Projects
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="POP logo.svg" alt="P.O.P Logo" class="footer-logo-img">
+                    <p>Crafting clarity out of complexity.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#projects">Projects</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Pritesh Parab. All rights reserved.</p>
+                <p>Designed & Built with ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
