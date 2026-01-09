@@ -44,7 +44,7 @@ I experienced this pain personally while preparing for exams. I would highlight 
 
 ---
 
-## 🛠️ HOW I BUILT IT: DEVELOPMENT PHASE (5 Months)
+## 🛠️ HOW I BUILT IT: DEVELOPMENT PHASE (3 Months)
 
 ### Technology Stack
 
@@ -93,15 +93,18 @@ I experienced this pain personally while preparing for exams. I would highlight 
 
 ---
 
-### Development Timeline (Nov 20 – Dec 25, 2025)
+### Development Timeline (Oct 10 – Dec 25, 2025)
 
 | **Week** | **Date Range** | **Milestones** |
 |----------|---|---|
-| **Week 1** | Nov 20–26 | Core highlighting, PDF support, interactive demo, email auth |
-| **Week 2** | Nov 27 – Dec 3 | Google OAuth, export to DOCX/PDF, notifications, branding |
-| **Week 3** | Dec 4–10 | PWA optimization, security audit (secrets removed, logs sanitized) |
-| **Week 4** | Dec 11–17 | Push notifications, privacy compliance, active consent |
-| **Week 5** | Dec 18–25 | Render deployment, mobile UX overhaul, Cloudinary migration |
+| **Week 1–2** | Oct 10–23 | Research & planning, tech stack selection, initial architecture |
+| **Week 3–4** | Oct 24 – Nov 6 | Backend setup (Django, PostgreSQL), database schema, API design |
+| **Week 5–6** | Nov 7–20 | Frontend foundation (React, Vite), basic UI components, routing |
+| **Week 7** | Nov 21–27 | Core highlighting, PDF support, interactive demo, email auth |
+| **Week 8** | Nov 28 – Dec 4 | Google OAuth, export to DOCX/PDF, notifications, branding |
+| **Week 9** | Dec 5–11 | PWA optimization, security audit (secrets removed, logs sanitized) |
+| **Week 10** | Dec 12–18 | Push notifications, privacy compliance, active consent |
+| **Week 11** | Dec 19–25 | Render deployment, mobile UX overhaul, Cloudinary migration |
 
 **Key Achievements:**
 - ✅ Core product feature (highlight → organize → export) fully functional
@@ -435,7 +438,7 @@ I optimized the dashboard (recent files, starred, search) before the highlight w
 | **Problem-Solution Fit** | Do users actually want this? | Built because I lived the pain; validated with friends |
 | **Unique Value** | Is there competition? | No other app does highlight→organize→export |
 | **User Base** | Do we have early adopters? | Pre-existing network of 50+ warm leads ready to try |
-| **Execution** | Can we build it? | Shipped MVP in 5 months, solo, fully functional |
+| **Execution** | Can we build it? | Shipped MVP in 3 months, solo, fully functional |
 | **Vision** | Is there a big market? | 4M+ exam students in India; expanding to researchers & professionals globally |
 | **Business Model** | Can we make money? | Freemium: Free tier for adoption, paid tiers for power users + AI features |
 | **Roadmap** | What's next? | AI features (mind maps, quizzes, chat), native apps, team collaboration |
