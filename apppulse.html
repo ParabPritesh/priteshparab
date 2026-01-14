@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="AppPulse Case Study - An enterprise feedback intelligence platform that transforms raw user feedback into actionable product insights using AI-powered analysis.">
+    <title>AppPulse Case Study | Pritesh Parab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/case-study.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><img src="POP logo.svg" alt="P.O.P Logo" class="logo-img"></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="index.html#contact" class="nav-link btn-primary">Let's Talk</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Case Study Hero -->
+    <section class="case-hero">
+        <div class="case-hero-container">
+            <a href="index.html#projects" class="back-link">← Back to Projects</a>
+            <div class="case-hero-content">
+                <div class="case-meta">
+                    <span class="case-tag">Enterprise</span>
+                    <span class="case-tag">AI</span>
+                    <span class="case-tag">Feedback Intelligence</span>
+                </div>
+                <h1 class="case-title">AppPulse</h1>
+                <p class="case-subtitle">
+                    An enterprise feedback intelligence platform that transforms raw user feedback into
+                    actionable product insights using AI-powered sentiment analysis, theme extraction,
+                    and workflow automation.
+                </p>
+                <div class="case-stats">
+                    <div class="stat">
+                        <span class="stat-value">89.5%</span>
+                        <span class="stat-label">AI Accuracy</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">520ms</span>
+                        <span class="stat-label">Dashboard Load</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">3</span>
+                        <span class="stat-label">Months to Build</span>
+                    </div>
+                </div>
+            </div>
+            <div class="case-hero-visual">
+                <div class="case-mockup" id="heroMockup">
+                    <img src="assets/AppPulse/localhost_3000_(high rees) landing .png" alt="AppPulse Dashboard"
+                        class="mockup-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="case-section">
+        <div class="case-container">
+            <div class="case-section-header">
+                <span class="section-label">Overview</span>
+                <h2>The Problem</h2>
+            </div>
+            <div class="case-content-grid">
+                <div class="case-text">
+                    <p class="lead-text">
+                        Product teams are drowning in feedback but can't act on it effectively.
+                        Feedback arrives through multiple channels, there's no clear prioritization,
+                        and critical insights get lost in volume.
+                    </p>
+                    <p>
+                        I experienced this firsthand while building HiLi Notes—relying on spreadsheets to track feedback
+                        with a <strong>two-week lag before having actionable insights</strong>. By the time I
+                        prioritized
+                        and fixed issues, I'd missed the window to respond to frustrated users.
+                    </p>
+                </div>
+                <div class="case-sidebar">
+                    <div class="info-card">
+                        <h4>My Role</h4>
+                        <p>Solo Founder, Full-Stack Developer & Product Designer</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Timeline</h4>
+                        <p>Oct 2025 – Jan 2026 (3 months)</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Target Users</h4>
+                        <p>Product teams, SaaS companies, Startups</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="case-section alt-bg">
+        <div class="case-container">
+            <div class="case-section-header">
+                <span class="section-label">The Solution</span>
+                <h2>What Makes AppPulse Unique</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI-First Architecture</h3>
+                    <p>Sentiment analysis (92% accuracy), duplicate detection via semantic similarity, auto-generated
+                        replies, and theme extraction using Gemini AI.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>No-Code Workflows</h3>
+                    <p>Visual 3-step workflow builder. Slack notifications, Jira tickets, Zendesk sync—all without
+                        writing code.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🗳️</div>
+                    <h3>Public Roadmap Voting</h3>
+                    <p>Kanban-style board customers can vote on. Shows what's being built and closes the feedback loop.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Privacy-First</h3>
+                    <p>GDPR compliant, SSO, 2FA, audit logging, and self-hostable Docker option for enterprises.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Gallery -->
+    <section class="case-section">
+        <div class="case-container">
+            <div class="case-section-header">
+                <span class="section-label">Product</span>
+                <h2>Platform Screenshots</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/AppPulse/localhost_3000_(high rees).png" alt="Landing Page">
+                    <p class="gallery-caption">Modern landing page design</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/AppPulse/localhost_3000_(high rees) (1).png" alt="Dashboard">
+                    <p class="gallery-caption">Real-time analytics dashboard</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/AppPulse/localhost_3000_(high rees) (4).png" alt="Feedback Inbox">
+                    <p class="gallery-caption">AI-powered feedback inbox</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/AppPulse/localhost_3000_(high rees) (5).png" alt="Integrations">
+                    <p class="gallery-caption">Third-party integrations hub</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Metrics -->
+    <section class="case-section alt-bg">
+        <div class="case-container">
+            <div class="case-section-header">
+                <span class="section-label">Performance</span>
+                <h2>Key Metrics</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>89.5% AI Accuracy</h3>
+                    <p>Overall accuracy on 100-sample test. Sentiment detection at 92%, bug detection at 92%.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>520ms Dashboard Load</h3>
+                    <p>Well under target of 1000ms. HTML/JS: 245ms, API fetch: 180ms, React render: 95ms.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔌</div>
+                    <h3>45ms API Response</h3>
+                    <p>GET /feedback endpoint. Full stats query in 32ms. 10-18x faster than initial implementation.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✅</div>
+                    <h3>4/4 Integrations</h3>
+                    <p>Slack, Jira, Zendesk, and Salesforce all production-ready with OAuth support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Development Timeline -->
+    <section class="case-section">
+        <div class="case-container">
+            <div class="case-section-header">
+                <span class="section-label">Process</span>
+                <h2>Development Timeline</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="week-badge">Week 1-2</span>
+                        <span class="timeline-date">Early October</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Foundation & Architecture</h3>
+                        <ul>
+                            <li>React + Node.js project setup with TypeScript</li>
+                            <li>Database schema design (Prisma + PostgreSQL)</li>
+                            <li>Design system creation</li>
+                            <li>JWT authentication implementation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="week-badge">Week 5-6</span>
+                        <span class="timeline-date">Late October</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Analytics Dashboard</h3>
+                        <ul>
+                            <li>Real-time sentiment visualization</li>
+                            <li>Trend charts for time-series data</li>
+                            <li>NPS score tracking</li>
+                            <li>Time-range filtering</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="week-badge">Week 9-10</span>
+                        <span class="timeline-date">Mid-Late November</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>AI Integration</h3>
+                        <ul>
+                            <li>Google Gemini API integration</li>
+                            <li>Sentiment analysis pipeline (92% accuracy)</li>
+                            <li>Theme extraction & duplicate detection</li>
+                            <li>AI-generated response suggestions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="week-badge">Week 12</span>
+                        <span class="timeline-date">Mid December</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Workflow Automation</h3>
+                        <ul>
+                            <li>Visual 3-step workflow builder</li>
+                            <li>Trigger engine (keywords, NPS thresholds, status)</li>
+                            <li>Action execution (email, Slack, Jira, Zendesk)</li>
+                            <li>Response template manager</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item launch">
+                    <div class="timeline-marker">
+                        <span class="week-badge launch-badge">🚀 Complete</span>
+                        <span class="timeline-date">January 6, 2026</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Production Ready</h3>
+                        <ul>
+                            <li>All 4 integrations fully configured</li>
+                            <li>GDPR compliance features</li>
+                            <li>Docker containerization</li>
+                            <li>Security hardening & testing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="case-section alt-bg">
+        <div class="case-container">
+            <div class="case-section-header">
+                <span class="section-label">Technology</span>
+                <h2>Tech Stack</h2>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-category">
+                    <h3>🎨 Frontend</h3>
+                    <div class="tech-pills">
+                        <span class="tech-pill">React 19</span>
+                        <span class="tech-pill">TypeScript</span>
+                        <span class="tech-pill">Vite</span>
+                        <span class="tech-pill">CSS Variables</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>🔧 Backend</h3>
+                    <div class="tech-pills">
+                        <span class="tech-pill">Node.js</span>
+                        <span class="tech-pill">Express</span>
+                        <span class="tech-pill">Prisma ORM</span>
+                        <span class="tech-pill">PostgreSQL</span>
+                        <span class="tech-pill">Redis</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>🤖 AI Integration</h3>
+                    <div class="tech-pills">
+                        <span class="tech-pill">Google Gemini</span>
+                        <span class="tech-pill">Sentiment Analysis</span>
+                        <span class="tech-pill">Theme Extraction</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>🔌 Integrations</h3>
+                    <div class="tech-pills">
+                        <span class="tech-pill">Slack API</span>
+                        <span class="tech-pill">Jira API</span>
+                        <span class="tech-pill">Zendesk API</span>
+                        <span class="tech-pill">Salesforce API</span>
+                        <span class="tech-pill">OAuth 2.0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenges Section -->
+    <section class="case-section">
+        <div class="case-container">
+            <div class="case-section-header">
+                <span class="section-label">Challenges</span>
+                <h2>Key Technical Challenges & Solutions</h2>
+            </div>
+            <div class="challenges-list">
+                <div class="challenge-item">
+                    <div class="challenge-header">
+                        <span class="challenge-number">01</span>
+                        <h3>AI Consistency & Output Quality</h3>
+                    </div>
+                    <div class="challenge-content">
+                        <div class="problem">
+                            <h4>Problem</h4>
+                            <p>First prompt attempt achieved only 65% accuracy. LLMs are non-deterministic, and feedback
+                                spans many domains with different analysis needs.</p>
+                        </div>
+                        <div class="solution">
+                            <h4>Solution</h4>
+                            <p>Built prompt template library with few-shot learning. Lowered temperature to 0.2, added
+                                validation layer, spent ~40 hours on prompt engineering.</p>
+                        </div>
+                        <div class="impact">
+                            <span class="impact-badge">✓ Achieved 89.5% overall accuracy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="challenge-item">
+                    <div class="challenge-header">
+                        <span class="challenge-number">02</span>
+                        <h3>Database Query Performance</h3>
+                    </div>
+                    <div class="challenge-content">
+                        <div class="problem">
+                            <h4>Problem</h4>
+                            <p>Dashboard took 5-10 seconds to load. N+1 queries, slow aggregations on large datasets,
+                                users experienced timeouts.</p>
+                        </div>
+                        <div class="solution">
+                            <h4>Solution</h4>
+                            <p>Added composite indexes, optimized Prisma queries, implemented Redis caching layer,
+                                pre-computed dashboard metrics hourly.</p>
+                        </div>
+                        <div class="impact">
+                            <span class="impact-badge">✓ Dashboard load: 5-10s → 520ms (10x faster)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="challenge-item">
+                    <div class="challenge-header">
+                        <span class="challenge-number">03</span>
+                        <h3>Third-Party Integration Complexity</h3>
+                    </div>
+                    <div class="challenge-content">
+                        <div class="problem">
+                            <h4>Problem</h4>
+                            <p>Each platform has different OAuth flows, rate limits, error handling. Slack, Jira,
+                                Zendesk, Salesforce all have unique quirks.</p>
+                        </div>
+                        <div class="solution">
+                            <h4>Solution</h4>
+                            <p>Built generic IntegrationAdapter pattern with standardized OAuth flow. Implemented
+                                exponential backoff, webhook verification, rate limit detection.</p>
+                        </div>
+                        <div class="impact">
+                            <span class="impact-badge">✓ All 4 integrations production-ready</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results & Learnings -->
+    <section class="case-section alt-bg">
+        <div class="case-container">
+            <div class="case-section-header">
+                <span class="section-label">Outcomes</span>
+                <h2>Key Learnings</h2>
+            </div>
+            <div class="learnings-grid">
+                <div class="learning-card">
+                    <span class="learning-number">1</span>
+                    <h3>AI Prompt Engineering is a Real Skill</h3>
+                    <p>The API is 10% of the work. The other 90% is engineering reliable systems—prompt design, testing,
+                        monitoring, error handling.</p>
+                </div>
+                <div class="learning-card">
+                    <span class="learning-number">2</span>
+                    <h3>Database Design is Foundational</h3>
+                    <p>Spent 3 hours on schema in Week 2, had to refactor in Week 8. 2 more hours of planning would have
+                        saved weeks of rework.</p>
+                </div>
+                <div class="learning-card">
+                    <span class="learning-number">3</span>
+                    <h3>Deploy Early & Often</h3>
+                    <p>Didn't deploy until Week 12, immediately discovered Docker issues and performance problems.
+                        Should have deployed in Week 4.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Roadmap -->
+    <section class="case-section">
+        <div class="case-container">
+            <div class="case-section-header">
+                <span class="section-label">What's Next</span>
+                <h2>Future Roadmap</h2>
+            </div>
+            <div class="roadmap-grid">
+                <div class="roadmap-card">
+                    <span class="roadmap-quarter">Next 3 Months</span>
+                    <h3>Beta Launch</h3>
+                    <p>Private beta with 10-20 early adopter companies. Collect feedback, refine UX, measure
+                        product-market fit.</p>
+                </div>
+                <div class="roadmap-card">
+                    <span class="roadmap-quarter">Q2 2026</span>
+                    <h3>Email Integration</h3>
+                    <p>Connect Gmail/Outlook. Auto-pull emails with "feedback," "bug," "feature" keywords.</p>
+                </div>
+                <div class="roadmap-card">
+                    <span class="roadmap-quarter">Q3 2026</span>
+                    <h3>Team Collaboration</h3>
+                    <p>Comments, @mentions, voting on feedback items. Keep discussions in AppPulse instead of Google
+                        Docs.</p>
+                </div>
+                <div class="roadmap-card">
+                    <span class="roadmap-quarter">2027</span>
+                    <h3>Scale & Revenue</h3>
+                    <p>200+ paying customers, $20K+ MRR, path to profitability. Recognized as Productboard alternative.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="case-cta-section">
+        <div class="case-container">
+            <div class="cta-content">
+                <h2>Interested in AppPulse?</h2>
+                <p>Transform user feedback into actionable product insights.</p>
+                <div class="cta-buttons">
+                    <a href="index.html#contact" class="btn-primary btn-xlarge">
+                        Get in Touch →
+                    </a>
+                    <a href="index.html#projects" class="btn-secondary btn-large">
+                        View More Projects
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="POP logo.svg" alt="P.O.P Logo" class="footer-logo-img">
+                    <p>Crafting clarity out of complexity.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#projects">Projects</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Pritesh Parab. All rights reserved.</p>
+                <p>Designed & Built with ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
