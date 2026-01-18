@@ -574,15 +574,22 @@ button {
     z-index: 1;
 }
 
-/* Code Backdrop - Faded behind */
+/* VS Code Screenshot Backdrop - Faded behind */
 .code-backdrop {
     position: absolute;
-    top: -20px;
-    left: -40px;
+    top: -30px;
+    left: -60px;
     z-index: 1;
-    opacity: 0.4;
-    transform: rotateY(-8deg) rotateX(5deg) scale(0.9);
+    opacity: 0.35;
+    transform: rotateY(-8deg) rotateX(5deg) scale(0.85);
     animation: floatSlow 8s ease-in-out infinite;
+}
+
+.vscode-screenshot {
+    width: 350px;
+    height: auto;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-2xl);
 }
 
 .code-window {
@@ -866,11 +873,11 @@ button {
     display: flex;
     align-items: center;
     gap: var(--space-3);
-    padding: var(--space-4) var(--space-5);
+    padding: var(--space-4) var(--space-6);
     background: var(--color-bg-card);
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-xl);
-    font-size: var(--text-sm);
+    font-size: var(--text-base);
     font-weight: 600;
     animation: float 6s ease-in-out infinite;
 }
