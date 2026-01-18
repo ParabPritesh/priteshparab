@@ -568,8 +568,8 @@ button {
     top: 45%;
     left: 40%;
     transform: translate(-50%, -50%);
-    width: 420px;
-    height: 360px;
+    width: 520px;
+    height: 420px;
     perspective: 1000px;
     z-index: 1;
 }
@@ -586,7 +586,7 @@ button {
 }
 
 .vscode-screenshot {
-    width: 350px;
+    width: 450px;
     height: auto;
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-2xl);
