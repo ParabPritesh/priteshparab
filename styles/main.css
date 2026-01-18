@@ -559,6 +559,136 @@ button {
     }
 }
 
+/* Central Mockup Illustration */
+.hero-mockup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.mockup-window {
+    width: 220px;
+    background: var(--color-bg-card);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-2xl), 0 0 60px rgba(66, 98, 255, 0.1);
+    overflow: hidden;
+    border: 1px solid var(--color-border-light);
+}
+
+.mockup-header {
+    display: flex;
+    gap: 6px;
+    padding: 12px 14px;
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.mockup-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.mockup-dot.red {
+    background: #FF5F56;
+}
+
+.mockup-dot.yellow {
+    background: #FFBD2E;
+}
+
+.mockup-dot.green {
+    background: #27CA40;
+}
+
+.mockup-content {
+    display: flex;
+    padding: 16px;
+    gap: 12px;
+    min-height: 140px;
+}
+
+.mockup-sidebar {
+    width: 40px;
+    background: linear-gradient(180deg, var(--color-primary) 0%, var(--color-accent-purple) 100%);
+    border-radius: var(--radius-md);
+    opacity: 0.8;
+}
+
+.mockup-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mockup-line {
+    height: 10px;
+    background: var(--color-border);
+    border-radius: var(--radius-sm);
+}
+
+.mockup-line.short {
+    width: 60%;
+}
+
+.mockup-block {
+    height: 50px;
+    background: linear-gradient(135deg, rgba(66, 98, 255, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+    border-radius: var(--radius-md);
+    border: 1px dashed var(--color-border);
+}
+
+/* AI Code Snippet Badge */
+.ai-code-snippet {
+    position: absolute;
+    bottom: -20px;
+    right: -30px;
+    background: var(--color-bg-dark);
+    color: var(--color-text-inverse);
+    padding: 8px 14px;
+    border-radius: var(--radius-lg);
+    font-family: 'Monaco', 'Menlo', monospace;
+    font-size: 11px;
+    display: flex;
+    gap: 6px;
+    box-shadow: var(--shadow-xl);
+    animation: float 4s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+.code-tag {
+    color: var(--color-accent-cyan);
+}
+
+.code-text {
+    color: var(--color-accent-green);
+}
+
+/* Connecting Lines */
+.hero-connections {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.connection-line {
+    stroke-dasharray: 8, 4;
+    animation: dashMove 20s linear infinite;
+}
+
+@keyframes dashMove {
+    to {
+        stroke-dashoffset: -100;
+    }
+}
+
 .floating-card {
     position: absolute;
     display: flex;
