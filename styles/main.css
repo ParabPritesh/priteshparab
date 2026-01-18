@@ -549,13 +549,184 @@ button {
 /* Hero Visual - Floating Cards */
 .hero-visual {
     position: relative;
-    height: 400px;
+    height: 450px;
     display: none;
 }
 
 @media (min-width: 1024px) {
     .hero-visual {
         display: block;
+    }
+}
+
+/* ============================================
+   FLOATING GLASS MOCKUP
+   ============================================ */
+
+.floating-glass-mockup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    height: 320px;
+    perspective: 1000px;
+}
+
+/* Code Backdrop - Faded behind */
+.code-backdrop {
+    position: absolute;
+    top: -20px;
+    left: -40px;
+    z-index: 1;
+    opacity: 0.4;
+    transform: rotateY(-8deg) rotateX(5deg) scale(0.9);
+    animation: floatSlow 8s ease-in-out infinite;
+}
+
+.code-window {
+    width: 280px;
+    background: #1e1e2e;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-xl);
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.code-header {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 14px;
+    background: #181825;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.code-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #45475a;
+}
+
+.code-dot:nth-child(1) {
+    background: #f38ba8;
+}
+
+.code-dot:nth-child(2) {
+    background: #f9e2af;
+}
+
+.code-dot:nth-child(3) {
+    background: #a6e3a1;
+}
+
+.code-title {
+    margin-left: 8px;
+    font-size: 11px;
+    color: #6c7086;
+    font-family: 'Monaco', 'Menlo', monospace;
+}
+
+.code-content {
+    padding: 16px;
+    font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.code-line {
+    color: #cdd6f4;
+    white-space: nowrap;
+}
+
+.code-comment {
+    color: #6c7086;
+}
+
+.code-keyword {
+    color: #cba6f7;
+}
+
+.code-string {
+    color: #a6e3a1;
+}
+
+.code-function {
+    color: #89b4fa;
+}
+
+/* App Mockup - Front, Glass Effect */
+.app-mockup {
+    position: absolute;
+    top: 20px;
+    right: -20px;
+    z-index: 2;
+    transform: rotateY(5deg) rotateX(-3deg);
+    animation: floatGlass 6s ease-in-out infinite;
+}
+
+.mockup-frame {
+    background: var(--color-bg-card);
+    border-radius: var(--radius-2xl);
+    padding: 8px;
+    box-shadow:
+        0 25px 50px -12px rgba(0, 0, 0, 0.2),
+        0 0 0 1px rgba(255, 255, 255, 0.1),
+        0 0 80px rgba(66, 98, 255, 0.15);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+}
+
+.mockup-screenshot {
+    width: 280px;
+    height: auto;
+    border-radius: var(--radius-xl);
+    display: block;
+}
+
+.mockup-label {
+    position: absolute;
+    bottom: -15px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--gradient-primary);
+    color: white;
+    padding: 6px 14px;
+    border-radius: var(--radius-full);
+    font-size: 11px;
+    font-weight: 600;
+    box-shadow: var(--shadow-lg);
+}
+
+.mockup-label svg {
+    width: 14px;
+    height: 14px;
+}
+
+@keyframes floatSlow {
+
+    0%,
+    100% {
+        transform: rotateY(-8deg) rotateX(5deg) scale(0.9) translateY(0);
+    }
+
+    50% {
+        transform: rotateY(-8deg) rotateX(5deg) scale(0.9) translateY(-10px);
+    }
+}
+
+@keyframes floatGlass {
+
+    0%,
+    100% {
+        transform: rotateY(5deg) rotateX(-3deg) translateY(0);
+    }
+
+    50% {
+        transform: rotateY(5deg) rotateX(-3deg) translateY(-15px);
     }
 }
 
