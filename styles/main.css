@@ -565,12 +565,13 @@ button {
 
 .floating-glass-mockup {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 45%;
+    left: 40%;
     transform: translate(-50%, -50%);
-    width: 380px;
-    height: 320px;
+    width: 420px;
+    height: 360px;
     perspective: 1000px;
+    z-index: 1;
 }
 
 /* Code Backdrop - Faded behind */
@@ -895,27 +896,31 @@ button {
 }
 
 .card-1 {
-    top: 10%;
-    left: 10%;
+    top: 0;
+    left: 50%;
     animation-delay: 0s;
+    z-index: 10;
 }
 
 .card-2 {
-    top: 30%;
-    right: 5%;
+    top: 15%;
+    right: -5%;
     animation-delay: 1.5s;
+    z-index: 10;
 }
 
 .card-3 {
-    bottom: 30%;
-    left: 5%;
+    bottom: 40%;
+    left: -5%;
     animation-delay: 3s;
+    z-index: 10;
 }
 
 .card-4 {
-    bottom: 10%;
-    right: 15%;
+    bottom: 15%;
+    right: 0;
     animation-delay: 4.5s;
+    z-index: 10;
 }
 
 /* Scroll Indicator */
