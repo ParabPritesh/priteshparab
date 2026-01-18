@@ -14,6 +14,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/animations.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body>
@@ -29,7 +31,6 @@
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
                 <li><a href="assets/Pritesh-Parab-Resume.pdf" download class="nav-link">Resume</a></li>
                 <li><a href="#contact" class="nav-link btn-primary">Let's Talk</a></li>
             </ul>
@@ -45,7 +46,8 @@
                     Available for new projects
                 </div>
                 <h1 class="hero-title fade-in delay-1">
-                    Crafting Clarity<br>out of Complexity.
+                    <span class="text-reveal">Crafting</span> <span class="gradient-text">Clarity</span><br><span
+                        class="text-reveal">out of</span> <span class="gradient-text">Complexity.</span>
                 </h1>
                 <p class="hero-subtitle fade-in delay-2">
                     A Product Designer & AI-First Maker who combines deep user research with AI-driven development to
@@ -59,20 +61,20 @@
 
             <!-- Floating Elements -->
             <div class="hero-visual">
-                <div class="floating-card card-1">
-                    <div class="floating-card-icon">🎨</div>
+                <div class="floating-card card-1 icon-hover">
+                    <div class="floating-card-icon"><i data-lucide="palette"></i></div>
                     <span>UI Design</span>
                 </div>
-                <div class="floating-card card-2">
-                    <div class="floating-card-icon">🔬</div>
+                <div class="floating-card card-2 icon-hover">
+                    <div class="floating-card-icon"><i data-lucide="microscope"></i></div>
                     <span>User Research</span>
                 </div>
-                <div class="floating-card card-3">
-                    <div class="floating-card-icon">🤖</div>
+                <div class="floating-card card-3 icon-hover">
+                    <div class="floating-card-icon"><i data-lucide="bot"></i></div>
                     <span>AI Tools</span>
                 </div>
-                <div class="floating-card card-4">
-                    <div class="floating-card-icon">✨</div>
+                <div class="floating-card card-4 icon-hover">
+                    <div class="floating-card-icon"><i data-lucide="sparkles"></i></div>
                     <span>Prototyping</span>
                 </div>
             </div>
@@ -248,62 +250,6 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials" id="testimonials">
-        <div class="section-container">
-            <div class="section-header">
-                <span class="section-label">What People Say</span>
-                <h2 class="section-title">Trusted by teams<br>who value great design.</h2>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"Pritesh's ability to translate complex requirements into intuitive interfaces is remarkable.
-                            His work significantly improved our user engagement metrics."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar"
-                            style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">SK</div>
-                        <div class="author-info">
-                            <strong>Sarah Kim</strong>
-                            <span>Product Manager, TechCorp</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"Working with Pritesh was a game-changer for our product. His research-driven approach helped
-                            us identify and solve problems we didn't even know existed."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar"
-                            style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">MR</div>
-                        <div class="author-info">
-                            <strong>Mike Rodriguez</strong>
-                            <span>Founder, StartupXYZ</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"The design system Pritesh created has become the backbone of our product development. It's
-                            intuitive, scalable, and beautifully documented."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar"
-                            style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">JL</div>
-                        <div class="author-info">
-                            <strong>Jennifer Lee</strong>
-                            <span>Design Lead, DesignStudio</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="section-container">
@@ -316,20 +262,20 @@
                         that make a real difference in people's lives.
                     </p>
                     <div class="contact-links">
-                        <a href="mailto:parabpritesh0@gmail.com" class="contact-link">
-                            <span class="contact-link-icon">📧</span>
+                        <a href="mailto:parabpritesh0@gmail.com" class="contact-link icon-hover">
+                            <span class="contact-link-icon"><i data-lucide="mail"></i></span>
                             <span>parabpritesh0@gmail.com</span>
                         </a>
-                        <a href="https://linkedin.com/in/priteshparab" target="_blank" class="contact-link">
-                            <span class="contact-link-icon">💼</span>
+                        <a href="https://linkedin.com/in/priteshparab" target="_blank" class="contact-link icon-hover">
+                            <span class="contact-link-icon"><i data-lucide="linkedin"></i></span>
                             <span>LinkedIn Profile</span>
                         </a>
                     </div>
                 </div>
                 <div class="contact-cta">
-                    <a href="mailto:parabpritesh0@gmail.com" class="btn-primary btn-xlarge">
+                    <a href="mailto:parabpritesh0@gmail.com" class="btn-primary btn-xlarge btn-magnetic">
                         Start a Conversation
-                        <span class="btn-arrow">→</span>
+                        <span class="btn-arrow"><i data-lucide="arrow-right"></i></span>
                     </a>
                 </div>
             </div>
@@ -359,6 +305,7 @@
     </footer>
 
     <script src="scripts/main.js"></script>
+    <script>lucide.createIcons();</script>
 </body>
 
 </html>

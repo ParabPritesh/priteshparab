@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollAnimations();
     initScrollReveal();
     initSmoothScroll();
+    initParallax();
+    initMagneticButtons();
 });
 
 /**
@@ -17,13 +19,13 @@ function initNavigation() {
     const navbar = document.getElementById('navbar');
     const navToggle = document.getElementById('navToggle');
     const navMenu = document.getElementById('navMenu');
-    
+
     // Mobile menu toggle
     navToggle?.addEventListener('click', () => {
         navToggle.classList.toggle('active');
         navMenu.classList.toggle('active');
     });
-    
+
     // Close menu when clicking a link
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
@@ -32,19 +34,19 @@ function initNavigation() {
             navMenu?.classList.remove('active');
         });
     });
-    
+
     // Navbar scroll effect
     let lastScroll = 0;
     window.addEventListener('scroll', () => {
         const currentScroll = window.pageYOffset;
-        
+
         // Add shadow on scroll
         if (currentScroll > 50) {
             navbar?.classList.add('scrolled');
         } else {
             navbar?.classList.remove('scrolled');
         }
-        
+
         lastScroll = currentScroll;
     });
 }
@@ -57,11 +59,11 @@ function initScrollAnimations() {
     const animateElements = document.querySelectorAll(
         '.section-header, .about-text, .skills-grid, .project-card, .testimonial-card, .contact-content, .contact-cta'
     );
-    
+
     animateElements.forEach((el, index) => {
         el.classList.add('reveal');
         // Add stagger effect
-        if (el.parentElement?.classList.contains('projects-grid') || 
+        if (el.parentElement?.classList.contains('projects-grid') ||
             el.parentElement?.classList.contains('testimonials-grid')) {
             el.classList.add(`stagger-${(index % 4) + 1}`);
         }
@@ -73,15 +75,15 @@ function initScrollAnimations() {
  */
 function initScrollReveal() {
     const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
-    
+
     if (!revealElements.length) return;
-    
+
     const observerOptions = {
         root: null,
         rootMargin: '0px',
         threshold: 0.1
     };
-    
+
     const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -91,7 +93,7 @@ function initScrollReveal() {
             }
         });
     }, observerOptions);
-    
+
     revealElements.forEach(el => {
         revealObserver.observe(el);
     });
@@ -102,20 +104,20 @@ function initScrollReveal() {
  */
 function initSmoothScroll() {
     const links = document.querySelectorAll('a[href^="#"]');
-    
+
     links.forEach(link => {
         link.addEventListener('click', (e) => {
             const href = link.getAttribute('href');
-            
+
             if (href === '#') return;
-            
+
             const target = document.querySelector(href);
-            
+
             if (target) {
                 e.preventDefault();
-                
+
                 const offsetTop = target.getBoundingClientRect().top + window.pageYOffset - 80;
-                
+
                 window.scrollTo({
                     top: offsetTop,
                     behavior: 'smooth'
@@ -126,31 +128,55 @@ function initSmoothScroll() {
 }
 
 /**
- * Optional: Parallax effect for floating cards
- * Uncomment to enable subtle mouse-following effect
+ * Parallax effect for floating cards
+ * Enables subtle mouse-following effect
  */
-/*
 function initParallax() {
     const floatingCards = document.querySelectorAll('.floating-card');
-    
+
     if (!floatingCards.length || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
         return;
     }
-    
+
     document.addEventListener('mousemove', (e) => {
         const mouseX = e.clientX / window.innerWidth - 0.5;
         const mouseY = e.clientY / window.innerHeight - 0.5;
-        
+
         floatingCards.forEach((card, index) => {
-            const depth = (index + 1) * 10;
+            const depth = (index + 1) * 12;
             const moveX = mouseX * depth;
             const moveY = mouseY * depth;
-            
+
             card.style.transform = `translate(${moveX}px, ${moveY}px)`;
         });
     });
 }
-*/
+
+/**
+ * Magnetic Button Effect
+ * Buttons subtly follow cursor within their bounds
+ */
+function initMagneticButtons() {
+    const magneticButtons = document.querySelectorAll('.btn-magnetic');
+
+    if (!magneticButtons.length || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        return;
+    }
+
+    magneticButtons.forEach(btn => {
+        btn.addEventListener('mousemove', (e) => {
+            const rect = btn.getBoundingClientRect();
+            const x = e.clientX - rect.left - rect.width / 2;
+            const y = e.clientY - rect.top - rect.height / 2;
+
+            btn.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px)`;
+        });
+
+        btn.addEventListener('mouseleave', () => {
+            btn.style.transform = 'translate(0, 0)';
+        });
+    });
+}
 
 /**
  * Utility: Debounce function for performance
