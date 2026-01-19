@@ -560,58 +560,38 @@ button {
 }
 
 /* ============================================
-   DECORATIVE GRADIENT ORBS
+   HERO ILLUSTRATION
    ============================================ */
 
-.hero-orb {
+.hero-illustration-wrapper {
     position: absolute;
-    border-radius: 50%;
-    filter: blur(60px);
-    opacity: 0.6;
-    pointer-events: none;
-}
-
-.orb-1 {
-    width: 300px;
-    height: 300px;
-    background: linear-gradient(135deg, rgba(66, 98, 255, 0.4) 0%, rgba(139, 92, 246, 0.3) 100%);
-    top: 10%;
-    left: 20%;
-    animation: orbFloat 12s ease-in-out infinite;
-}
-
-.orb-2 {
-    width: 200px;
-    height: 200px;
-    background: linear-gradient(135deg, rgba(236, 72, 153, 0.3) 0%, rgba(139, 92, 246, 0.2) 100%);
     top: 50%;
-    right: 10%;
-    animation: orbFloat 15s ease-in-out infinite reverse;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
 }
 
-.orb-3 {
-    width: 150px;
-    height: 150px;
-    background: linear-gradient(135deg, rgba(6, 182, 212, 0.3) 0%, rgba(66, 98, 255, 0.2) 100%);
-    bottom: 20%;
-    left: 40%;
-    animation: orbFloat 10s ease-in-out infinite;
-    animation-delay: 2s;
+.hero-illustration {
+    width: 420px;
+    height: auto;
+    animation: floatIllustration 8s ease-in-out infinite;
+    filter: drop-shadow(0 20px 40px rgba(66, 98, 255, 0.15));
+    transition: transform var(--transition-slow);
 }
 
-@keyframes orbFloat {
+.hero-illustration:hover {
+    transform: scale(1.02);
+}
+
+@keyframes floatIllustration {
 
     0%,
     100% {
-        transform: translate(0, 0) scale(1);
+        transform: translateY(0);
     }
 
-    33% {
-        transform: translate(20px, -30px) scale(1.05);
-    }
-
-    66% {
-        transform: translate(-15px, 15px) scale(0.95);
+    50% {
+        transform: translateY(-15px);
     }
 }
 
