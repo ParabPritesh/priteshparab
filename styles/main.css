@@ -572,10 +572,10 @@ button {
 }
 
 .hero-illustration {
-    width: 420px;
+    width: 550px;
     height: auto;
     animation: floatIllustration 8s ease-in-out infinite;
-    filter: drop-shadow(0 20px 40px rgba(66, 98, 255, 0.15));
+    filter: drop-shadow(0 25px 50px rgba(0, 0, 0, 0.15));
     transition: transform var(--transition-slow);
 }
 
