@@ -10,6 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
     initSmoothScroll();
     initParallax();
     initMagneticButtons();
+    initBackToTop();
+    initReadingProgress();
+    initActiveNavTracking();
 });
 
 /**
@@ -193,4 +196,96 @@ function debounce(func, wait = 10, immediate = true) {
         timeout = setTimeout(later, wait);
         if (callNow) func.apply(this, args);
     };
+}
+
+/**
+ * Back to Top Button
+ * Shows a floating button when scrolled down
+ */
+function initBackToTop() {
+    // Create back to top button if not exists
+    let backToTop = document.querySelector('.back-to-top');
+
+    if (!backToTop) {
+        backToTop = document.createElement('button');
+        backToTop.className = 'back-to-top';
+        backToTop.setAttribute('aria-label', 'Back to top');
+        backToTop.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18,15 12,9 6,15"></polyline></svg>';
+        document.body.appendChild(backToTop);
+    }
+
+    // Show/hide button based on scroll position
+    window.addEventListener('scroll', debounce(() => {
+        if (window.pageYOffset > 400) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    }, 100, false));
+
+    // Scroll to top when clicked
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
+/**
+ * Reading Progress Bar
+ * Shows progress through the page
+ */
+function initReadingProgress() {
+    // Only add on case study pages
+    if (!document.querySelector('.case-hero')) return;
+
+    // Create progress bar if not exists
+    let progressBar = document.querySelector('.reading-progress');
+
+    if (!progressBar) {
+        progressBar = document.createElement('div');
+        progressBar.className = 'reading-progress';
+        document.body.appendChild(progressBar);
+    }
+
+    window.addEventListener('scroll', () => {
+        const scrollTop = window.pageYOffset;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const scrollPercent = (scrollTop / docHeight) * 100;
+        progressBar.style.width = scrollPercent + '%';
+    });
+}
+
+/**
+ * Active Navigation Tracking
+ * Highlights current section in navigation
+ */
+function initActiveNavTracking() {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
+
+    if (!sections.length || !navLinks.length) return;
+
+    const observerOptions = {
+        root: null,
+        rootMargin: '-20% 0px -80% 0px',
+        threshold: 0
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const id = entry.target.id;
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + id) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
+    }, observerOptions);
+
+    sections.forEach(section => observer.observe(section));
 }
