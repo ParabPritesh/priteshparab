@@ -540,10 +540,127 @@ button {
     }
 }
 
+/* Hero Highlights List */
+.hero-highlights {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--space-8) 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.hero-highlights li {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    font-size: var(--text-base);
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+}
+
+.hero-highlights li svg {
+    width: 20px;
+    height: 20px;
+    color: var(--color-accent-green);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.hero-highlights li a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.hero-highlights li a:hover {
+    color: var(--color-primary-dark);
+}
+
 .hero-cta {
     display: flex;
     flex-wrap: wrap;
     gap: var(--space-4);
+}
+
+/* About Section - Process & Work Lists */
+.about-heading {
+    font-size: var(--text-lg);
+    font-weight: 700;
+    color: var(--color-text);
+    margin: var(--space-6) 0 var(--space-3) 0;
+}
+
+.process-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--space-4) 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.process-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    font-size: var(--text-base);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+.process-list li svg {
+    width: 20px;
+    height: 20px;
+    color: var(--color-primary);
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.recent-work-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--space-4) 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.recent-work-list li {
+    font-size: var(--text-base);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    padding-left: var(--space-4);
+    position: relative;
+}
+
+.recent-work-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.recent-work-list li a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.recent-work-list li a:hover {
+    color: var(--color-primary-dark);
+}
+
+.about-cta-text {
+    margin-top: var(--space-6);
+    padding: var(--space-4);
+    background: linear-gradient(135deg, rgba(66, 98, 255, 0.06) 0%, rgba(139, 92, 246, 0.06) 100%);
+    border-radius: var(--radius-lg);
+    border-left: 3px solid var(--color-primary);
+    font-size: var(--text-base);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
 }
 
 /* Hero Visual - Floating Cards */
