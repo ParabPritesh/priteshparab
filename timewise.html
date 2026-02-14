@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="TimeWise UX Case Study - A smart productivity app designed to help busy users plan tasks, manage schedules, and build habits from a single distraction-free dashboard.">
+    <title>TimeWise Case Study | Pritesh Parab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/case-study.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><img src="assets/pop-portfolio-logo.svg" alt="P.O.P Logo"
+                    class="logo-img"></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="index.html#contact" class="nav-link btn-primary">Let's Talk</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Case Study Hero -->
+    <section class="case-hero">
+        <div class="case-hero-container">
+            <div class="case-hero-content">
+                <a href="index.html#projects" class="back-link">← Back to Projects</a>
+                <div class="case-meta">
+                    <span class="case-tag">UX Design</span>
+                    <span class="case-tag">Productivity</span>
+                    <span class="case-tag">Mobile App</span>
+                </div>
+                <h1 class="case-title">TimeWise</h1>
+                <p class="case-subtitle">
+                    A smart all-in-one productivity app that helps busy users plan tasks, manage
+                    schedules, and build habits from a single, distraction-free dashboard.
+                </p>
+                <div class="case-stats">
+                    <div class="stat">
+                        <span class="stat-value">5</span>
+                        <span class="stat-label">Months Duration</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">4</span>
+                        <span class="stat-label">User Personas</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">2</span>
+                        <span class="stat-label">Usability Rounds</span>
+                    </div>
+                </div>
+                <div class="case-cta">
+                    <a href="https://www.figma.com/proto/xA8NQWPrhQtqI739UZjODv/Time-Wise?page-id=122%3A1753&node-id=122-3553&p=f&viewport=-54%2C161%2C0.21&t=ohinBwiOHVv3a6Qq-1&scaling=min-zoom&content-scaling=fixed"
+                        target="_blank" class="btn-primary btn-large">
+                        View Hi-Fi Prototype →
+                    </a>
+                </div>
+            </div>
+            <div class="case-hero-visual">
+                <div class="case-mockup" id="heroMockup">
+                    <div class="mockup-placeholder">
+                        <span><i data-lucide="clock" style="width:64px;height:64px;"></i></span>
+                        <p>TimeWise Dashboard</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="case-section">
+        <div class="case-container">
+            <div class="case-section-header">
+                <span class="section-label">Overview</span>
+                <h2>The Problem</h2>
+            </div>
+            <div class="case-content-grid">
+                <div class="case-text">
+                    <p class="lead-text">
+                        Unorganised lifestyles lead to unbalanced work-life and study-hobbies
+                        routines. Users struggle with managing time effectively and maintaining
+                        productive daily habits.
+                    </p>
+                    <p>
+                        I initially assumed only working professionals faced this challenge, but
+                        <strong>secondary research revealed that students, parents, and career
+                            changers</strong> all struggle equally with time management and daily task
+                        organisation.
+                    </p>
+                </div>
+                <div class="case-sidebar">
+                    <div class="info-card">
+                        <h4>My Role</h4>
+                        <p>Lead UX Designer & UX Researcher</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Timeline</h4>
+                        <p>Sep 2025 – Jan 2026 (5 months)</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Target Users</h4>
+                        <p>Students, Working Professionals, Parents, Career Changers</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Responsibilities</h4>
+                        <p>User research, personas, journey maps, wireframing, prototyping, visual design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Research Pain Points -->
+    <section class="case-section alt-bg">
+        <div class="case-container">
+            <div class="case-section-header">
+                <span class="section-label">Research</span>
+                <h2>User Research Pain Points</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i data-lucide="alert-circle"></i></div>
+                    <h3>Unorganised Life</h3>
+                    <p>Users struggle with managing time and maintaining a structured daily routine, leading to missed
+                        deadlines and unbalanced priorities.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i data-lucide="wallet"></i></div>
+                    <h3>Financial Constraints & Productivity</h3>
+                    <p>Budget limitations affect tool choices, while poor productivity compounds financial stress for
+                        career changers and students.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i data-lucide="list-ordered"></i></div>
+                    <h3>Efficient Task Prioritization</h3>
+                    <p>Users lack a clear system to prioritize tasks effectively, leading to decision fatigue and
+                        procrastination on important work.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i data-lucide="shuffle"></i></div>
+                    <h3>Juggling Multiple Responsibilities</h3>
+                    <p>Balancing work, studies, family, and personal goals simultaneously creates overwhelm and reduces
+                        performance across all areas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personas Section -->
+    <section class="case-section">
+        <div class="case-container">
+            <div class="case-section-header">
+                <span class="section-label">Understanding Users</span>
+                <h2>User Personas</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i data-lucide="graduation-cap"></i></div>
+                    <h3>Aria — Student & Learner</h3>
+                    <p>A busy university student and intern who needs an efficient way to manage academic, internship,
+                        and networking tasks because she struggles with prioritization and risks missing valuable career
+                        opportunities.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i data-lucide="briefcase"></i></div>
+                    <h3>Daniel — Working Professional</h3>
+                    <p>A professional with a demanding job who needs a better system to manage his workload and prevent
+                        burnout because task overload and lack of structured prioritization affect his productivity and
+                        work-life balance.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i data-lucide="heart"></i></div>
+                    <h3>Neelam — Parent & Caregiver</h3>
+                    <p>A dedicated teacher and parent who needs to balance classroom responsibilities and family duties
+                        without feeling overwhelmed because time constraints lead to stress and reduced efficiency.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i data-lucide="trending-up"></i></div>
+                    <h3>Elliot — Career Changer</h3>
+                    <p>A career changer working in a demanding job who needs a structured way to balance work, studies,
+                        and finances because his irregular schedule and financial concerns make it difficult to stay
+                        consistent with learning goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Journey Maps -->
+    <section class="case-section alt-bg">
+        <div class="case-container">
+            <div class="case-section-header">
+                <span class="section-label">Journey Mapping</span>
+                <h2>User Journey Insights</h2>
+            </div>
+            <div class="feedback-grid">
+                <div class="feedback-card positive">
+                    <span class="feedback-icon"><i data-lucide="graduation-cap"></i></span>
+                    <p>"Mapping out Aria's journey highlighted the importance of a structured scheduling system that
+                        helps students balance internships, networking, and studies while improving task
+                        prioritization."</p>
+                </div>
+                <div class="feedback-card positive">
+                    <span class="feedback-icon"><i data-lucide="briefcase"></i></span>
+                    <p>"Daniel's journey revealed the need for a smart productivity assistant that streamlines work
+                        tasks, minimizes distractions, and promotes healthier work-life balance."</p>
+                </div>
+                <div class="feedback-card positive">
+                    <span class="feedback-icon"><i data-lucide="heart"></i></span>
+                    <p>"Neelam's journey emphasized the necessity of a time management tool that integrates both
+                        professional and personal responsibilities, reducing stress while optimizing lesson planning and
+                        family time."</p>
+                </div>
+                <div class="feedback-card positive">
+                    <span class="feedback-icon"><i data-lucide="trending-up"></i></span>
+                    <p>"Elliot's user journey highlighted the demand for an adaptable planner that supports balancing
+                        work, upskilling efforts, and financial constraints while maintaining personal well-being."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Process Timeline -->
+    <section class="case-section">
+        <div class="case-container">
+            <div class="case-section-header">
+                <span class="section-label">Process</span>
+                <h2>Design Process</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="week-badge">Phase 1</span>
+                        <span class="timeline-date">Research</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Paper Wireframes</h3>
+                        <ul>
+                            <li>Drafted multiple iterations to address user pain points around productivity</li>
+                            <li>Dashboard with action-first hierarchy: key metrics at top, Quick Actions in bottom bar
+                            </li>
+                            <li>Explored multiple settings information architectures</li>
+                            <li>Selected layout based on usability and simplicity</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="week-badge">Phase 2</span>
+                        <span class="timeline-date">Wireframing</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Digital Wireframes</h3>
+                        <ul>
+                            <li>Action-first dashboard experience — monitor and act on tasks in one glance</li>
+                            <li>Bottom Quick Actions (Schedule, Habit, Reminder, Add Task) for immediate access</li>
+                            <li>Settings with expandable categories for intuitive navigation</li>
+                            <li>Unified hub design to eliminate screen-switching frustration</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="week-badge">Phase 3</span>
+                        <span class="timeline-date">Prototyping</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Low-Fidelity Prototype</h3>
+                        <ul>
+                            <li>Interactive prototype built in Figma for usability testing</li>
+                            <li>Core task flows: creating tasks, scheduling, habit tracking</li>
+                            <li>Settings navigation and configuration flows</li>
+                            <li>Prepared test scenarios for usability study</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="week-badge">Phase 4</span>
+                        <span class="timeline-date">Testing</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Usability Studies (2 Rounds)</h3>
+                        <ul>
+                            <li>Evaluated navigation, core actions, and productivity insights</li>
+                            <li>Identified usability barriers and validated design assumptions</li>
+                            <li>Refined experience based on real user behavior and feedback</li>
+                            <li>Addressed inactive dropdowns and dead-end interactions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item launch">
+                    <div class="timeline-marker">
+                        <span class="week-badge launch-badge">Phase 5</span>
+                        <span class="timeline-date">Final Design</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Hi-Fidelity Mockups & Prototype</h3>
+                        <ul>
+                            <li>Refined interface based on usability testing feedback</li>
+                            <li>Implemented functional dropdowns and interactive elements</li>
+                            <li>Applied visual design with accessibility considerations</li>
+                            <li>Built complete hi-fi prototype in Figma</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Usability Findings -->
+    <section class="case-section alt-bg">
+        <div class="case-container">
+            <div class="case-section-header">
+                <span class="section-label">Testing</span>
+                <h2>Usability Study Findings</h2>
+            </div>
+            <div class="challenges-list">
+                <div class="challenge-item">
+                    <div class="challenge-header">
+                        <span class="challenge-number">R1</span>
+                        <h3>Round 1 — What Worked</h3>
+                    </div>
+                    <div class="challenge-content">
+                        <div class="solution">
+                            <h4>Positive Findings</h4>
+                            <p>Quick Actions significantly reduced friction for common tasks. Timeline schedule view
+                                improved time awareness. Progress widgets increased user motivation.</p>
+                        </div>
+                        <div class="problem">
+                            <h4>Issues Found</h4>
+                            <p>Users were unsure where to start on the dashboard. Task creation flow felt unclear to
+                                first-time users.</p>
+                        </div>
+                        <div class="impact">
+                            <span class="impact-badge">✓ Quick Actions validated as a core UX pattern</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="challenge-item">
+                    <div class="challenge-header">
+                        <span class="challenge-number">R2</span>
+                        <h3>Round 2 — Refinement</h3>
+                    </div>
+                    <div class="challenge-content">
+                        <div class="problem">
+                            <h4>Critical Issue</h4>
+                            <p>Users encountered dead-ends in the Settings menu, specifically within the
+                                'Collaborations' and 'Data & Privacy' sections. Inconsistent interactive elements
+                                confused users and reduced trust.</p>
+                        </div>
+                        <div class="solution">
+                            <h4>Solution Applied</h4>
+                            <p>Implemented functional dropdowns in all Settings sections. Ensured all interactive
+                                elements responded to user input consistently. Improved visual hierarchy and feedback
+                                states.</p>
+                        </div>
+                        <div class="impact">
+                            <span class="impact-badge">✓ All interactive elements now functional — user trust
+                                restored</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accessibility -->
+    <section class="case-section">
+        <div class="case-container">
+            <div class="case-section-header">
+                <span class="section-label">Inclusive Design</span>
+                <h2>Accessibility Considerations</h2>
+            </div>
+            <div class="learnings-grid">
+                <div class="learning-card">
+                    <span class="learning-number">1</span>
+                    <h3>High-Contrast Colors</h3>
+                    <p>High-contrast colors and large text were used throughout the interface to support users with low
+                        vision and ensure readability in all lighting conditions.</p>
+                </div>
+                <div class="learning-card">
+                    <span class="learning-number">2</span>
+                    <h3>Touch Target Sizes</h3>
+                    <p>All buttons and touch targets follow minimum size guidelines (44x44px) to support motor
+                        accessibility and ensure comfortable interaction on mobile devices.</p>
+                </div>
+                <div class="learning-card">
+                    <span class="learning-number">3</span>
+                    <h3>Clear Labels & Navigation</h3>
+                    <p>Simple navigation patterns and clear labels improve usability for screen readers and support
+                        cognitive accessibility for users of all abilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Learnings -->
+    <section class="case-section alt-bg">
+        <div class="case-container">
+            <div class="case-section-header">
+                <span class="section-label">Outcomes</span>
+                <h2>Key Takeaways</h2>
+            </div>
+            <div class="case-content-grid">
+                <div class="case-text">
+                    <p class="lead-text">
+                        "I finally feel like I can see my whole day clearly in one place."
+                    </p>
+                    <p>
+                        Participants reported feeling more organized and less overwhelmed while using TimeWise. This
+                        project taught me the importance of <strong>iterative design and validating assumptions through
+                            usability testing</strong>. Small interface changes — like persistent actions and clearer
+                        hierarchy — can significantly improve user confidence and productivity.
+                    </p>
+                </div>
+                <div class="case-sidebar">
+                    <div class="info-card">
+                        <h4>Design Tool</h4>
+                        <p>Figma — Wireframing, Prototyping, Visual Design</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Research Methods</h4>
+                        <p>Secondary Research, Personas, Journey Maps, Usability Testing</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Key Insight</h4>
+                        <p>Iterative design with usability testing at every stage produces better results than polishing
+                            first</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Steps -->
+    <section class="case-section">
+        <div class="case-container">
+            <div class="case-section-header">
+                <span class="section-label">What's Next</span>
+                <h2>Future Steps</h2>
+            </div>
+            <div class="learnings-grid">
+                <div class="learning-card">
+                    <span class="learning-number">1</span>
+                    <h3>More Usability Testing</h3>
+                    <p>Conduct additional usability testing with a larger and more diverse group of users to validate
+                        designs at scale and uncover edge cases.</p>
+                </div>
+                <div class="learning-card">
+                    <span class="learning-number">2</span>
+                    <h3>Smart Scheduling</h3>
+                    <p>Implement smart scheduling recommendations using productivity data to help users optimize their
+                        daily routines automatically.</p>
+                </div>
+                <div class="learning-card">
+                    <span class="learning-number">3</span>
+                    <h3>Collaboration Features</h3>
+                    <p>Explore collaboration features for shared task management, enabling teams and families to
+                        coordinate schedules and responsibilities together.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prototype Links -->
+    <section class="case-section alt-bg">
+        <div class="case-container">
+            <div class="case-section-header">
+                <span class="section-label">Prototypes</span>
+                <h2>Interactive Prototypes</h2>
+            </div>
+            <div class="features-grid">
+                <a href="https://www.figma.com/proto/xA8NQWPrhQtqI739UZjODv/Time-Wise?node-id=1-634&p=f&t=wRn0inhQvYV3FMod-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1"
+                    target="_blank" class="feature-card" style="text-decoration: none; color: inherit;">
+                    <div class="feature-icon"><i data-lucide="smartphone"></i></div>
+                    <h3>Low-Fidelity Prototype</h3>
+                    <p>Early wireframe prototype used for initial usability testing. Focuses on core navigation and task
+                        flows.</p>
+                </a>
+                <a href="https://www.figma.com/proto/xA8NQWPrhQtqI739UZjODv/Time-Wise?page-id=122%3A1753&node-id=122-3553&p=f&viewport=-54%2C161%2C0.21&t=ohinBwiOHVv3a6Qq-1&scaling=min-zoom&content-scaling=fixed"
+                    target="_blank" class="feature-card" style="text-decoration: none; color: inherit;">
+                    <div class="feature-icon"><i data-lucide="monitor-smartphone"></i></div>
+                    <h3>Hi-Fidelity Prototype</h3>
+                    <p>Final polished prototype with visual design, accessibility refinements, and functional
+                        interactions throughout.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Case Studies -->
+    <section class="case-section alt-bg">
+        <div class="case-container">
+            <div class="case-section-header">
+                <span class="section-label">Explore More</span>
+                <h2>Other Case Studies</h2>
+            </div>
+            <div class="features-grid">
+                <a href="hili-notes.html" class="feature-card" style="text-decoration: none; color: inherit;">
+                    <div class="feature-icon"><i data-lucide="highlighter"></i></div>
+                    <h3>HiLi Notes</h3>
+                    <p>PDF highlighting app that transforms highlights into structured, exportable notes.</p>
+                </a>
+                <a href="omnimarketer-ai.html" class="feature-card" style="text-decoration: none; color: inherit;">
+                    <div class="feature-icon"><i data-lucide="mail"></i></div>
+                    <h3>OmniMarketerAI</h3>
+                    <p>AI-powered marketing automation platform for email sequences and social content.</p>
+                </a>
+                <a href="apppulse.html" class="feature-card" style="text-decoration: none; color: inherit;">
+                    <div class="feature-icon"><i data-lucide="bar-chart-3"></i></div>
+                    <h3>AppPulse</h3>
+                    <p>Enterprise feedback intelligence with AI-powered sentiment analysis.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="case-cta-section">
+        <div class="case-container">
+            <div class="cta-content">
+                <h2>Explore the TimeWise Prototype</h2>
+                <p>See the complete UX design process from research to hi-fidelity prototype.</p>
+                <div class="cta-buttons">
+                    <a href="https://www.figma.com/proto/xA8NQWPrhQtqI739UZjODv/Time-Wise?page-id=122%3A1753&node-id=122-3553&p=f&viewport=-54%2C161%2C0.21&t=ohinBwiOHVv3a6Qq-1&scaling=min-zoom&content-scaling=fixed"
+                        target="_blank" class="btn-primary btn-xlarge">
+                        View Figma Prototype →
+                    </a>
+                    <a href="index.html#projects" class="btn-secondary btn-large">
+                        View More Projects
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Navigation -->
+    <section class="case-section">
+        <div class="case-container">
+            <nav class="case-study-nav">
+                <a href="hili-notes.html" class="case-nav-link prev">
+                    <i data-lucide="arrow-left"></i>
+                    <div>
+                        <span class="case-nav-label">Previous</span>
+                        <span class="case-nav-title">HiLi Notes</span>
+                    </div>
+                </a>
+                <a href="apppulse.html" class="case-nav-link next">
+                    <div>
+                        <span class="case-nav-label">Next</span>
+                        <span class="case-nav-title">AppPulse</span>
+                    </div>
+                    <i data-lucide="arrow-right"></i>
+                </a>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="assets/pop-portfolio-logo.svg" alt="P.O.P Logo" class="footer-logo-img">
+                    <p>Crafting clarity out of complexity.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#projects">Projects</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Pritesh Parab. All rights reserved.</p>
+                <p>Designed & Built with ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>
