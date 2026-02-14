@@ -1681,6 +1681,16 @@ button {
     text-align: center;
 }
 
+.contact-cta .btn-secondary {
+    border-color: rgba(255, 255, 255, 0.4);
+    color: var(--color-text-inverse);
+}
+
+.contact-cta .btn-secondary:hover {
+    border-color: var(--color-text-inverse);
+    background: rgba(255, 255, 255, 0.1);
+}
+
 /* Icon Hover Effect */
 .icon-hover i,
 .icon-hover svg {
