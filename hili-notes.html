@@ -7,14 +7,13 @@
     <meta name="description"
         content="HiLi Notes Case Study - A PWA that transforms PDF highlights into organized, exportable notes for students and researchers.">
     <title>HiLi Notes Case Study | Pritesh Parab</title>
+    <!-- Playful Geometric Fonts: Outfit (headings) + Plus Jakarta Sans (body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/animations.css">
-    <link rel="stylesheet" href="styles/case-study.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css?v=1.3">
+    <link rel="stylesheet" href="styles/animations.css?v=1.3">
+    <link rel="stylesheet" href="styles/case-study.css?v=1.3">
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
@@ -23,8 +22,7 @@
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo"><img src="assets/pop-portfolio-logo.svg" alt="P.O.P Logo"
-                    class="logo-img"></a>
+            <a href="index.html" class="nav-logo">Pritesh Parab</a>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
@@ -76,7 +74,7 @@
             <div class="case-hero-visual">
                 <!-- App Screenshot -->
                 <div class="case-mockup" id="heroMockup">
-                    <img src="assets/hili-notes/workspace.png"
+                    <img src="assets/hili-notes/AI Highlight Extraction.png"
                         alt="HiLi Notes Workspace - PDF highlighting with organized notes" class="mockup-image">
                 </div>
             </div>
@@ -116,6 +114,53 @@
                         <h4>Target Users</h4>
                         <p>Students, UPSC aspirants, Researchers, Knowledge workers</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Section: The Metric-Driving Flow -->
+    <section class="case-section alt-bg">
+        <div class="case-container">
+            <div class="case-section-header">
+                <span class="section-label" style="background: rgba(244,114,182,0.1); border-color: var(--color-secondary); color: var(--color-secondary);">Driving Retention</span>
+                <h2>The Metric-Driving Flow</h2>
+                <svg class="squiggle" viewBox="0 0 120 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block; margin-top:12px; width:120px;">
+                    <path d="M2 8C12 2 22 2 32 8C42 14 52 14 62 8C72 2 82 2 92 8C102 14 112 14 118 8" stroke="#F472B6" stroke-width="3" stroke-linecap="round" />
+                </svg>
+            </div>
+            <div class="case-text reveal">
+                <p class="lead-text">How we achieved ~65% weekly retention by reducing time-to-value from hours to seconds.</p>
+                <p>During user interviews, the biggest pain point was the friction of moving highlights from a PDF into an organized study document. By designing a seamless <strong>Upload &rarr; Highlight &rarr; Export</strong> flow, we removed the tedious manual copying process entirely.</p>
+            </div>
+            
+            <div class="comparison-grid three-col reveal">
+                <!-- Step 1 -->
+                <div class="comparison-card">
+                    <h3 style="font-family: var(--font-heading); color: var(--color-accent); margin-bottom: 16px;">1. Upload &amp; Parse</h3>
+                    <!-- Flow screenshot -->
+                    <div style="width:100%; height:220px; background:#FFFFFF; border: 2px solid var(--color-foreground); border-radius: var(--radius-lg); overflow: hidden; display:flex; align-items:center; justify-content:center; margin-bottom: 16px; box-shadow: var(--shadow-sm);">
+                        <img src="assets/hili-notes/Upload & Parse.png" alt="1. Upload & Parse" style="max-width:100%; max-height:100%; object-fit:contain; display:block;">
+                    </div>
+                    <p style="font-size: var(--text-sm);">Users can drag and drop massive textbook PDFs. The UI immediately gives confident feedback that processing has begun.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="comparison-card" style="box-shadow: var(--shadow-card-pink);">
+                    <h3 style="font-family: var(--font-heading); color: var(--color-secondary); margin-bottom: 16px;">2. AI Highlight Extraction</h3>
+                    <!-- Flow screenshot -->
+                    <div style="width:100%; height:220px; background:#FFFFFF; border: 2px solid var(--color-foreground); border-radius: var(--radius-lg); overflow: hidden; display:flex; align-items:center; justify-content:center; margin-bottom: 16px; box-shadow: var(--shadow-sm);">
+                        <img src="assets/hili-notes/AI Highlight Extraction.png" alt="2. AI Highlight Extraction" style="max-width:100%; max-height:100%; object-fit:contain; display:block;">
+                    </div>
+                    <p style="font-size: var(--text-sm);">The core value prop: AI instantly pulls out highlights and auto-categorizes them, requiring zero manual typing.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="comparison-card" style="box-shadow: var(--shadow-card-yellow);">
+                    <h3 style="font-family: var(--font-heading); color: var(--color-tertiary); margin-bottom: 16px;">3. Export &amp; Sync</h3>
+                    <!-- Flow screenshot -->
+                    <div style="width:100%; height:220px; background:#FFFFFF; border: 2px solid var(--color-foreground); border-radius: var(--radius-lg); overflow: hidden; display:flex; align-items:center; justify-content:center; margin-bottom: 16px; box-shadow: var(--shadow-sm);">
+                        <img src="assets/hili-notes/Export & Sync.png" alt="3. Export & Sync" style="max-width:100%; max-height:100%; object-fit:contain; display:block;">
+                    </div>
+                    <p style="font-size: var(--text-sm);">One-click export to Notion or markdown format, closing the loop and allowing students to immediately start studying.</p>
                 </div>
             </div>
         </div>
@@ -603,7 +648,8 @@
         <div class="footer-container">
             <div class="footer-top">
                 <div class="footer-brand">
-                    <img src="assets/pop-portfolio-logo.svg" alt="P.O.P Logo" class="footer-logo-img">
+                    <!-- Text logo instead of SVG image -->
+                    <span class="footer-logo">Pritesh Parab</span>
                     <p>Crafting clarity out of complexity.</p>
                 </div>
                 <div class="footer-links">

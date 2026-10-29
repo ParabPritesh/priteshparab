@@ -1,6 +1,6 @@
 /**
- * Portfolio Main JavaScript
- * Handles navigation, scroll animations, and interactivity
+ * Portfolio Main JavaScript — Playful Geometric Design System
+ * Handles navigation, scroll animations, parallax, and interactivity
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -56,19 +56,19 @@ function initNavigation() {
 
 /**
  * Scroll-triggered Animations using Intersection Observer
+ * Adds 'reveal' class for the bouncy pop-in effect
  */
 function initScrollAnimations() {
-    // Add reveal class to elements that should animate on scroll
     const animateElements = document.querySelectorAll(
-        '.section-header, .about-text, .skills-grid, .project-card, .testimonial-card, .contact-content, .contact-cta'
+        '.section-header, .about-text, .skills-grid, .project-card, .testimonial-card, .contact-card, .contact-content, .contact-cta'
     );
 
     animateElements.forEach((el, index) => {
         el.classList.add('reveal');
-        // Add stagger effect
+        // Add stagger effect for grid children
         if (el.parentElement?.classList.contains('projects-grid') ||
             el.parentElement?.classList.contains('testimonials-grid')) {
-            el.classList.add(`stagger-${(index % 4) + 1}`);
+            el.classList.add(`stagger-${(index % 6) + 1}`);
         }
     });
 }
@@ -91,8 +91,6 @@ function initScrollReveal() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('active');
-                // Optionally stop observing after reveal
-                // revealObserver.unobserve(entry.target);
             }
         });
     }, observerOptions);
@@ -131,13 +129,16 @@ function initSmoothScroll() {
 }
 
 /**
- * Parallax effect for floating cards
- * Enables subtle mouse-following effect
+ * Parallax effect for floating cards & confetti shapes
+ * Subtle mouse-following with depth layers
  */
 function initParallax() {
     const floatingCards = document.querySelectorAll('.floating-card');
+    const confettiShapes = document.querySelectorAll('.confetti-shape');
 
-    if (!floatingCards.length || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const allParallax = [...floatingCards, ...confettiShapes];
+
+    if (!allParallax.length || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
         return;
     }
 
@@ -145,19 +146,19 @@ function initParallax() {
         const mouseX = e.clientX / window.innerWidth - 0.5;
         const mouseY = e.clientY / window.innerHeight - 0.5;
 
-        floatingCards.forEach((card, index) => {
-            const depth = (index + 1) * 12;
+        allParallax.forEach((el, index) => {
+            const depth = (index + 1) * 8;
             const moveX = mouseX * depth;
             const moveY = mouseY * depth;
 
-            card.style.transform = `translate(${moveX}px, ${moveY}px)`;
+            el.style.transform = `translate(${moveX}px, ${moveY}px)`;
         });
     });
 }
 
 /**
  * Magnetic Button Effect
- * Buttons subtly follow cursor within their bounds
+ * Buttons subtly follow cursor within their bounds — bouncy feel
  */
 function initMagneticButtons() {
     const magneticButtons = document.querySelectorAll('.btn-magnetic');
@@ -172,7 +173,7 @@ function initMagneticButtons() {
             const x = e.clientX - rect.left - rect.width / 2;
             const y = e.clientY - rect.top - rect.height / 2;
 
-            btn.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px)`;
+            btn.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
         });
 
         btn.addEventListener('mouseleave', () => {
@@ -199,18 +200,16 @@ function debounce(func, wait = 10, immediate = true) {
 }
 
 /**
- * Back to Top Button
- * Shows a floating button when scrolled down
+ * Back to Top Button — styled as a candy button
  */
 function initBackToTop() {
-    // Create back to top button if not exists
     let backToTop = document.querySelector('.back-to-top');
 
     if (!backToTop) {
         backToTop = document.createElement('button');
         backToTop.className = 'back-to-top';
         backToTop.setAttribute('aria-label', 'Back to top');
-        backToTop.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18,15 12,9 6,15"></polyline></svg>';
+        backToTop.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18,15 12,9 6,15"></polyline></svg>';
         document.body.appendChild(backToTop);
     }
 
@@ -234,13 +233,12 @@ function initBackToTop() {
 
 /**
  * Reading Progress Bar
- * Shows progress through the page
+ * Shows progress through case study pages
  */
 function initReadingProgress() {
     // Only add on case study pages
     if (!document.querySelector('.case-hero')) return;
 
-    // Create progress bar if not exists
     let progressBar = document.querySelector('.reading-progress');
 
     if (!progressBar) {

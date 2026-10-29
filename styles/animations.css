@@ -1,69 +1,46 @@
 /* ============================================
-   ANIMATIONS - Keyframes & Transitions
+   PLAYFUL GEOMETRIC — Animations & Transitions
    ============================================ */
 
-/* Pulse Animation for Status Dot */
-@keyframes pulse {
+/* ============================================
+   KEYFRAME ANIMATIONS
+   ============================================ */
 
-    0%,
+/* Bouncy Pop In — the signature entrance animation */
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.08);
+    }
+    70% {
+        transform: scale(0.96);
+    }
     100% {
         opacity: 1;
         transform: scale(1);
     }
-
-    50% {
-        opacity: 0.6;
-        transform: scale(1.2);
-    }
 }
 
-/* Float Animation for Cards */
-@keyframes float {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-20px);
-    }
-}
-
-/* Scroll Wheel Animation */
-@keyframes scroll {
-    0% {
-        opacity: 1;
-        transform: translateX(-50%) translateY(0);
-    }
-
-    100% {
-        opacity: 0;
-        transform: translateX(-50%) translateY(16px);
-    }
-}
-
-/* Fade In Animation (triggered by JS) */
+/* Fade In Up — gentler entrance for text blocks */
 @keyframes fadeInUp {
     from {
         opacity: 0;
         transform: translateY(30px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
+/* Fade In — simple opacity */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 /* Slide In from Left */
@@ -72,7 +49,6 @@
         opacity: 0;
         transform: translateX(-50px);
     }
-
     to {
         opacity: 1;
         transform: translateX(0);
@@ -85,84 +61,144 @@
         opacity: 0;
         transform: translateX(50px);
     }
-
     to {
         opacity: 1;
         transform: translateX(0);
     }
 }
 
-/* Scale In Animation */
+/* Scale In — zoom entrance */
 @keyframes scaleIn {
     from {
         opacity: 0;
-        transform: scale(0.9);
+        transform: scale(0.8);
     }
-
     to {
         opacity: 1;
         transform: scale(1);
     }
 }
 
-/* Glow Pulse Animation */
-@keyframes glow {
+/* Wiggle — playful hover for icons and social links */
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(3deg); }
+    40% { transform: rotate(-3deg); }
+    60% { transform: rotate(2deg); }
+    80% { transform: rotate(-1deg); }
+    100% { transform: rotate(0deg); }
+}
 
-    0%,
-    100% {
-        box-shadow: 0 0 20px rgba(66, 98, 255, 0.2);
+/* Bounce Float — elastic floating for decorative elements */
+@keyframes bounceFloat {
+    0%, 100% {
+        transform: translateY(0);
+        animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
     }
-
     50% {
-        box-shadow: 0 0 40px rgba(66, 98, 255, 0.4);
+        transform: translateY(-14px);
+        animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
     }
 }
 
+/* Pulse — status dot breathing */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1.3);
+    }
+}
+
+/* Scroll Wheel */
+@keyframes scroll {
+    0% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(16px);
+    }
+}
+
+/* Spin — for decorative rotating shapes */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Confetti Drift — gentle floating for background shapes */
+@keyframes confettiDrift {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    33% {
+        transform: translateY(-8px) rotate(5deg);
+    }
+    66% {
+        transform: translateY(4px) rotate(-3deg);
+    }
+}
+
+/* Shimmer — skeleton loading */
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
 /* ============================================
-   INITIAL STATES FOR JS ANIMATIONS
+   INITIAL STATES — Page Load Animations
    ============================================ */
 
 .fade-in {
     opacity: 0;
-    transform: translateY(30px);
-    animation: fadeInUp 0.8s ease forwards;
+    transform: scale(0.3);
+    animation: popIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
 }
 
 .fade-in.delay-1 {
-    animation-delay: 0.2s;
+    animation-delay: 0.15s;
 }
 
 .fade-in.delay-2 {
-    animation-delay: 0.4s;
+    animation-delay: 0.3s;
 }
 
 .fade-in.delay-3 {
-    animation-delay: 0.6s;
+    animation-delay: 0.45s;
 }
 
 .fade-in.delay-4 {
-    animation-delay: 0.8s;
+    animation-delay: 0.6s;
 }
 
 /* ============================================
    SCROLL-TRIGGERED ANIMATIONS
    ============================================ */
 
+/* Pop In Reveal — bouncy entrance on scroll */
 .reveal {
     opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
+    transform: scale(0.85) translateY(30px);
+    transition: opacity 0.5s cubic-bezier(0.34, 1.56, 0.64, 1),
+                transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .reveal.active {
     opacity: 1;
-    transform: translateY(0);
+    transform: scale(1) translateY(0);
 }
 
+/* Slide In from Left */
 .reveal-left {
     opacity: 0;
     transform: translateX(-40px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
+    transition: opacity 0.5s cubic-bezier(0.34, 1.56, 0.64, 1),
+                transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .reveal-left.active {
@@ -170,10 +206,12 @@
     transform: translateX(0);
 }
 
+/* Slide In from Right */
 .reveal-right {
     opacity: 0;
     transform: translateX(40px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
+    transition: opacity 0.5s cubic-bezier(0.34, 1.56, 0.64, 1),
+                transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .reveal-right.active {
@@ -181,10 +219,12 @@
     transform: translateX(0);
 }
 
+/* Scale Reveal */
 .reveal-scale {
     opacity: 0;
-    transform: scale(0.9);
-    transition: opacity 0.6s ease, transform 0.6s ease;
+    transform: scale(0.8);
+    transition: opacity 0.5s cubic-bezier(0.34, 1.56, 0.64, 1),
+                transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .reveal-scale.active {
@@ -196,35 +236,18 @@
    STAGGERED ANIMATIONS
    ============================================ */
 
-.stagger-1 {
-    transition-delay: 0.1s;
-}
-
-.stagger-2 {
-    transition-delay: 0.2s;
-}
-
-.stagger-3 {
-    transition-delay: 0.3s;
-}
-
-.stagger-4 {
-    transition-delay: 0.4s;
-}
-
-.stagger-5 {
-    transition-delay: 0.5s;
-}
-
-.stagger-6 {
-    transition-delay: 0.6s;
-}
+.stagger-1 { transition-delay: 0.08s; }
+.stagger-2 { transition-delay: 0.16s; }
+.stagger-3 { transition-delay: 0.24s; }
+.stagger-4 { transition-delay: 0.32s; }
+.stagger-5 { transition-delay: 0.4s; }
+.stagger-6 { transition-delay: 0.48s; }
 
 /* ============================================
    HOVER MICRO-INTERACTIONS
    ============================================ */
 
-/* Link Underline Animation */
+/* Link Underline Animation — squiggly style */
 .link-underline {
     position: relative;
 }
@@ -235,69 +258,70 @@
     bottom: -2px;
     left: 0;
     width: 0;
-    height: 2px;
-    background: var(--color-primary);
-    transition: width var(--transition-base);
+    height: 3px;
+    background: var(--color-accent);
+    border-radius: var(--radius-full);
+    transition: width 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .link-underline:hover::after {
     width: 100%;
 }
 
-/* Card Hover Lift */
+/* Card Hover Lift — with hard shadow growth */
 .hover-lift {
-    transition: transform var(--transition-base), box-shadow var(--transition-base);
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+                box-shadow 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .hover-lift:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-2xl);
+    transform: translateY(-6px) translateX(-2px);
+    box-shadow: var(--shadow-pop-hover);
+}
+
+/* Wiggle on Hover — for social icons */
+.wiggle-hover {
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.wiggle-hover:hover {
+    animation: wiggle 0.5s ease;
 }
 
 /* Icon Rotate on Hover */
 .hover-rotate {
-    transition: transform var(--transition-base);
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .hover-rotate:hover {
     transform: rotate(15deg);
 }
 
-/* Scale on Hover */
+/* Scale on Hover — bouncy */
 .hover-scale {
-    transition: transform var(--transition-base);
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .hover-scale:hover {
-    transform: scale(1.05);
+    transform: scale(1.08);
 }
 
 /* ============================================
    LOADING & PLACEHOLDER ANIMATIONS
    ============================================ */
 
-@keyframes shimmer {
-    0% {
-        background-position: -200% 0;
-    }
-
-    100% {
-        background-position: 200% 0;
-    }
-}
-
 .skeleton {
     background: linear-gradient(90deg,
-            var(--color-border-light) 0%,
-            var(--color-bg-card) 50%,
-            var(--color-border-light) 100%);
+            var(--color-border) 0%,
+            var(--color-card) 50%,
+            var(--color-border) 100%);
     background-size: 200% 100%;
     animation: shimmer 1.5s infinite;
     border-radius: var(--radius-md);
 }
 
 /* ============================================
-   REDUCED MOTION ACCESSIBILITY
+   REDUCED MOTION — Accessibility
    ============================================ */
 
 @media (prefers-reduced-motion: reduce) {
@@ -320,7 +344,12 @@
         transform: none;
     }
 
-    .floating-card {
+    .floating-card,
+    .confetti-shape {
+        animation: none;
+    }
+
+    .wiggle-hover:hover {
         animation: none;
     }
 }

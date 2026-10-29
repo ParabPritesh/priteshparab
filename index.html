@@ -7,10 +7,11 @@
     <meta name="description"
         content="Pritesh Parab - Product Designer &amp; AI-First Builder who designs user-centered products through research, UX strategy, and AI-assisted development.">
     <title>Pritesh Parab | Product Designer &amp; AI-First Builder</title>
+    <!-- Playful Geometric Fonts: Outfit (headings) + Plus Jakarta Sans (body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/animations.css">
@@ -22,7 +23,8 @@
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#" class="nav-logo"><img src="assets/pop-portfolio-logo.svg" alt="P.O.P Logo" class="logo-img"></a>
+            <!-- Text logo in Outfit font -->
+            <a href="#" class="nav-logo">Pritesh Parab</a>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
@@ -40,6 +42,14 @@
     <!-- Hero Section -->
     <section class="hero" id="hero">
         <div class="hero-bg-pattern"></div>
+
+        <!-- Confetti / Decorative shapes (hidden on mobile via CSS) -->
+        <div class="confetti-shape" style="top: 15%; right: 12%; width: 24px; height: 24px; background: #F472B6; border-radius: 50%;"></div>
+        <div class="confetti-shape" style="top: 70%; left: 8%; width: 20px; height: 20px; background: #8B5CF6; transform: rotate(45deg);"></div>
+        <div class="confetti-shape" style="top: 30%; right: 25%; width: 0; height: 0; border-left: 12px solid transparent; border-right: 12px solid transparent; border-bottom: 20px solid #FBBF24;"></div>
+        <div class="confetti-shape" style="bottom: 20%; right: 8%; width: 18px; height: 18px; background: #34D399; border-radius: 4px; transform: rotate(20deg);"></div>
+        <div class="confetti-shape" style="bottom: 35%; left: 15%; width: 16px; height: 16px; background: #FBBF24; border-radius: 50%;"></div>
+
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-badge fade-in">
@@ -48,8 +58,8 @@
                 </div>
                 <h1 class="hero-title fade-in delay-1">
                     <span class="text-reveal">Hi, I'm Pritesh&nbsp;–</span><br>
-                    <span class="gradient-text">Product Designer</span> <span class="gradient-text">&amp;</span>
-                    <span class="gradient-text">AI-First Builder</span>
+                    <span class="gradient-text">Product Designer</span> <span style="color: var(--color-secondary);">&amp;</span>
+                    <span style="color: var(--color-quaternary);">AI-First Builder</span>
                 </h1>
                 <p class="hero-subtitle fade-in delay-2">
                     I design user‑centred products through research, UX strategy, and AI‑assisted development.
@@ -60,7 +70,7 @@
                             retention)</span></li>
                     <li><i data-lucide="check-circle"></i> <span>Created a full UX case study for <a
                                 href="timewise.html"><strong>TimeWise</strong></a>, a time‑management app</span></li>
-                    <li><i data-lucide="check-circle"></i> <span>Completing <strong>Google UX Design Professional
+                    <li><i data-lucide="check-circle"></i> <span>Completed <strong>Google UX Design Professional
                                 Certificate</strong> &amp; seeking entry‑level UX/UI Designer roles</span></li>
                 </ul>
                 <div class="hero-cta fade-in delay-3">
@@ -71,28 +81,31 @@
                 </div>
             </div>
 
-            <!-- Floating Elements -->
+            <!-- Hero Visual — Avatar + Floating Cards -->
             <div class="hero-visual">
-                <!-- Hero Illustration -->
+                <!-- Profile Photo Card -->
                 <div class="hero-illustration-wrapper">
-                    <img src="assets/hero-illustration.png" alt="Product Design &amp; AI Tools Illustration"
-                        class="hero-illustration">
+                    <div class="greeting-bubble">👋 Hey there!</div>
+                    <div class="hero-photo-card">
+                        <img src="assets/Founder image pritesh.webp" alt="Pritesh Parab - Product Designer & AI-First Builder"
+                            class="hero-illustration">
+                    </div>
                 </div>
 
                 <!-- Floating Cards -->
-                <div class="floating-card card-1 icon-hover">
+                <div class="floating-card card-1">
                     <div class="floating-card-icon"><i data-lucide="palette"></i></div>
                     <span>UI Design</span>
                 </div>
-                <div class="floating-card card-2 icon-hover">
+                <div class="floating-card card-2">
                     <div class="floating-card-icon"><i data-lucide="search"></i></div>
                     <span>User Research</span>
                 </div>
-                <div class="floating-card card-3 icon-hover">
+                <div class="floating-card card-3">
                     <div class="floating-card-icon"><i data-lucide="bot"></i></div>
                     <span>AI Tools</span>
                 </div>
-                <div class="floating-card card-4 icon-hover">
+                <div class="floating-card card-4">
                     <div class="floating-card-icon"><i data-lucide="layers"></i></div>
                     <span>Prototyping</span>
                 </div>
@@ -114,17 +127,23 @@
             <div class="section-header">
                 <span class="section-label">About Me</span>
                 <h2 class="section-title">Designing with purpose,<br>building with precision.</h2>
+                <!-- Squiggly underline SVG -->
+                <svg class="squiggle" viewBox="0 0 120 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 8C12 2 22 2 32 8C42 14 52 14 62 8C72 2 82 2 92 8C102 14 112 14 118 8"
+                        stroke="#8B5CF6" stroke-width="3" stroke-linecap="round" />
+                </svg>
             </div>
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        I started in the education sector as an academic evaluator, analysing over <strong>5,000 student
-                            answer copies</strong>. That work gave me deep insight into how students learn and where
-                        they struggle.
+                        I started in education, analysing over <strong>5,000 student answer copies</strong> as an
+                        academic evaluator. That work trained me to spot patterns in qualitative data at
+                        scale — the same skill I now use to <strong>synthesize user interviews and usability
+                            test findings</strong> into actionable design decisions.
                     </p>
                     <p>
                         Now I apply that analytical mindset to product design. As Founder &amp; Product Designer of <a
-                            href="hili-notes.html"><strong>HiLi Notes</strong></a>, I’ve conducted 6+ user interviews,
+                            href="hili-notes.html"><strong>HiLi Notes</strong></a>, I've conducted 6+ user interviews,
                         defined flows and interfaces, and collaborated with AI tools to ship a live PWA with 20+ beta
                         users and strong retention. With <a href="timewise.html"><strong>TimeWise</strong></a>, I
                         explored the full UX process—from research and personas to hi‑fi prototypes and usability
@@ -136,14 +155,15 @@
                                 and research to validate real problems</span></li>
                         <li><i data-lucide="pen-tool"></i> <span><strong>Design clearly</strong> — I create user flows,
                                 wireframes, and high-fidelity interfaces in Figma</span></li>
-                        <li><i data-lucide="bot"></i> <span><strong>Build with AI</strong> — I collaborate with tools
-                                like ChatGPT, Claude, and Gemini to ship working MVPs</span></li>
+                        <li><i data-lucide="bot"></i> <span><strong>Build with AI</strong> — I use AI tools to
+                                rapidly explore concepts, then apply design judgment to refine, validate, and
+                                ship</span></li>
                         <li><i data-lucide="refresh-cw"></i> <span><strong>Iterate fast</strong> — I use feedback from
                                 real users to refine the product</span></li>
                     </ul>
                     <p class="about-cta-text">
-                        I’m currently completing the <strong>Google UX Design Professional Certificate</strong> and
-                        looking for an entry‑level UX/UI role where I can keep doing end‑to‑end UX on real products with
+                        I've recently completed the <strong>Google UX Design Professional Certificate</strong> and
+                        I am looking for an entry‑level UX/UI role where I can keep doing end‑to‑end UX on real products with
                         experienced teams.
                     </p>
                 </div>
@@ -204,13 +224,17 @@
             <div class="section-header">
                 <span class="section-label">Featured Work</span>
                 <h2 class="section-title">Case studies that<br>speak for themselves.</h2>
+                <svg class="squiggle" viewBox="0 0 120 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 8C12 2 22 2 32 8C42 14 52 14 62 8C72 2 82 2 92 8C102 14 112 14 118 8"
+                        stroke="#F472B6" stroke-width="3" stroke-linecap="round" />
+                </svg>
             </div>
             <div class="projects-grid">
                 <!-- Project 1: HiLi Notes -->
                 <article class="project-card">
                     <a href="hili-notes.html" class="project-link">
                         <div class="project-image hili-notes-bg">
-                            <img src="assets/hili-notes/dashboard.png" alt="HiLi Notes Dashboard"
+                            <img src="assets/hili-notes/AI Highlight Extraction.png" alt="HiLi Notes Dashboard"
                                 class="project-screenshot">
                             <div class="project-overlay">
                                 <span class="view-project">View Case Study →</span>
@@ -218,7 +242,7 @@
                         </div>
                         <div class="project-info">
                             <h3 class="project-title">HiLi Notes</h3>
-                            <p class="project-value-prop">Turn PDF highlights into organised study notes in seconds.</p>
+                            <p class="project-value-prop">A streamlined <strong>upload &rarr; highlight &rarr; export</strong> flow that turns study sessions into structured notes—driving our ~65% weekly retention.</p>
                             <div class="project-meta">
                                 <span class="project-status launched">Live PWA</span>
                                 <span class="project-role">Founder & Product Designer</span>
@@ -294,6 +318,10 @@
             <div class="section-header" style="margin-top: var(--space-20);">
                 <span class="section-label">Concept Explorations (AI‑Assisted)</span>
                 <h2 class="section-title">Ideas I explored<br>through building.</h2>
+                <svg class="squiggle" viewBox="0 0 120 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 8C12 2 22 2 32 8C42 14 52 14 62 8C72 2 82 2 92 8C102 14 112 14 118 8"
+                        stroke="#FBBF24" stroke-width="3" stroke-linecap="round" />
+                </svg>
             </div>
             <div class="projects-grid">
                 <!-- Card 3: OmniMarketer AI -->
@@ -356,13 +384,15 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Section — "The Giant Sticker Card" -->
     <section class="contact" id="contact">
         <div class="section-container">
             <div class="contact-wrapper">
                 <div class="contact-content">
-                    <span class="section-label">Get in Touch</span>
-                    <h2 class="section-title">Let's Work Together</h2>
+                    <div class="section-header">
+                        <span class="section-label">Get in Touch</span>
+                        <h2 class="section-title">Let's build something cool.</h2>
+                    </div>
                     <p class="contact-description">
                         I'm currently seeking entry-level UX/UI Designer roles, especially with AI-first
                         or education-focused teams.
@@ -396,12 +426,13 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer — Light Theme -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-top">
                 <div class="footer-brand">
-                    <img src="assets/pop-portfolio-logo.svg" alt="P.O.P Logo" class="footer-logo-img">
+                    <!-- Text logo instead of SVG image -->
+                    <span class="footer-logo">Pritesh Parab</span>
                     <p>Crafting clarity out of complexity.</p>
                 </div>
                 <div class="footer-links">
@@ -412,7 +443,7 @@
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 Pritesh Parab. All rights reserved.</p>
-                <p>Designed & Built with ❤️</p>
+                <p>Designed &amp; Built with ❤️</p>
             </div>
         </div>
     </footer>
